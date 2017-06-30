@@ -1,82 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Texsnab</title>
+
 </head>
 
 
 <body>
 <div class="container header">
     <div class="row">
-        <a href="" class="col-xs-3"><img src="../images/110102021.200x200.jpg" height="200"
-                                                            width="184"></a>
-        <h5 class="col-xs-2">“Киевоблагротехпостач” частное акционерное общество магазин автозапчастей</h5>
-        <div class="row col-xs-2">
-        <h4>(044) 452-63-30</h4>
-        <h4>(044) 452-63-31</h4>
-        <h6>zakaz@texsnab.kiev.ua</h6>
+        <a href="" class="col-xs-3"><img src="images/logo_header.png" height="46" width="270"/></a>
+        <div class="row col-xs-3" info>
+            <p>“Киевоблагротехпостач” <br>частное акционерное общество <br>магазин автозапчастей</p>
         </div>
-        <button class="btn col-xs-5">Корзина</button>
+        <div class="row col-xs-2">
+        <span>(044) 452-63-30</span>
+            <br>
+        <span>(044) 452-63-31</span>
+        <span>zakaz@texsnab.kiev.ua</span>
+        </div>
+        <div class="row col-xs-3">
+        <button class="btn bascket"><span><img src="images/korzina_icon.png" height="27"
+                                                                   width="29"></span> Корзина пуста</button>
+        </div>
     </div>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
+</div>
+        <div class="container-fluid ">
+            <div class="row">
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Главная <span class="sr-only">(current)</span></a></li>
+                    <li class="active"><a href="#">Главная</a></li>
                     <li><a href="#">Оплата и доставка</a></li>
                     <li><a href="#">Контакты</a></li>
                     <li><a href="#">О предприятии</a></li>
                 </ul>
+                <div class="">
                 <form class="navbar-form navbar-right">
-                    <div class="form-group">
                         <input type="text" class="form-control" placeholder="Поиск товара">
-                    </div>
-                    <button type="submit" class="image"><i class="fa fa-search"></i></button>
+                        <button type="submit" class="image"><i class="fa fa-search"></i></button>
                 </form>
+                </div>
             </div><!-- /.navbar-collapse -->
+            </div>
         </div><!-- /.container-fluid -->
-    </nav>
 
-    <img src="../images/img_tittle_small.png" height="285" width="346">
-    <img src="../images/img_tittle_header.png" height="185" width="568">
-    <br>
-      <button type="button">Прайс лист</button>
-</div>
+    <div class="container-fluid price">
+        <div class="row col-md-7" id="price-list-left">
+            <img id="tittle-big" src="images/img_tittle_header.png" height="185" width="568">
+            <br>
+            <button type="button" class="btn-price-list">Прайс лист</button>
+        </div>
+        <div class="row col-md-5">
+        <img id="tittle-small" src="images/img_tittle_small.png" height="285" width="346">
+        </div>
+
+    </div>
+
 <div class="container">
 <div class="row">
-    <ul class="list-inline">
-        <span>подбор автозапчастей по автомобилю</span>
-        <li class="list-group-item"><a href=""><img src="../images/shewrole_ico.png" height="71" width="71"></a></li>
-        <li class="list-group-item"><a href=""><img src="../images/shewrole_ico.png" height="71" width="71"></a></li>
-        <li class="list-group-item"><a href=""><img src="../images/shewrole_ico.png" height="71" width="71"></a></li>
-        <li class="list-group-item"><a href=""><img src="../images/shewrole_ico.png" height="71" width="71"></a></li>
-        <li class="list-group-item"><a href=""><img src="../images/shewrole_ico.png" height="71" width="71"></a></li>
-        <li class="list-group-item"><a href=""><img src="../images/shewrole_ico.png" height="71" width="71"></a></li>
-        <li class="list-group-item"><a href=""><img src="../images/shewrole_ico.png" height="71" width="71"></a></li>
-        <li class="list-group-item"><a href=""><img src="../images/shewrole_ico.png" height="71" width="71"></a></li>
-        <li class="list-group-item"><a href=""><img src="../images/shewrole_ico.png" height="71" width="71"></a></li>
-        <li class="list-group-item"><a href=""><img src="../images/shewrole_ico.png" height="71" width="71"></a></li>
-        <li class="list-group-item"><a href=""><img src="../images/shewrole_ico.png" height="71" width="71"></a></li>
-        <li class="list-group-item"><a href=""><img src="../images/shewrole_ico.png" height="71" width="71"></a></li>
-        <li class="list-group-item"><a href=""><img src="../images/shewrole_ico.png" height="71" width="71"></a></li>
-    </ul>
+    <span class="col-xs-1">подбор автозапчастей по автомобилю</span>
+    <a href=""><img src="images/shewrole_ico.png" height="71" width="71"></a>
+    <a href=""><img src="images/shewrole_ico.png" height="71" width="71"></a>
+    <a href=""><img src="images/shewrole_ico.png" height="71" width="71"></a>
+    <a href=""><img src="images/shewrole_ico.png" height="71" width="71"></a>
+    <a href=""><img src="images/shewrole_ico.png" height="71" width="71"></a>
+    <a href=""><img src="images/shewrole_ico.png" height="71" width="71"></a>
+    <a href=""><img src="images/shewrole_ico.png" height="71" width="71"></a>
+    <a href=""><img src="images/shewrole_ico.png" height="71" width="71"></a>
+    <a href=""><img src="images/shewrole_ico.png" height="71" width="71"></a>
+    <a href=""><img src="images/shewrole_ico.png" height="71" width="71"></a>
+    <a href=""><img src="images/shewrole_ico.png" height="71" width="71"></a>
+    <a href=""><img src="images/shewrole_ico.png" height="71" width="71"></a>
 </div>
 </div>
 <br>
@@ -91,11 +100,11 @@
             <a href="#" class="list-group-item">Автошины</a>
         </div>
 
-        <img src="../images/Sale_big.jpg" height="171" width="238">
+        <img src="images/Sale_big.jpg" height="171" width="238">
         <div class="watched">
 
         <h5>Вы просматривали:</h5>
-            <a href=""><img src="../images/170001467.50x50.jpg" height="50" width="46"></a>
+            <a href=""><img src="images/170001467.50x50.jpg" height="50" width="46"></a>
         </div>
         <div class="news">
             <h5><a href="">Новости, </a>статьи и обзоры</h5>
@@ -129,7 +138,7 @@
                         <span class="articul"></span>
                         <div class="prd_img">
                             <div class="mark"></div>
-                            <img src="../images/110102021.200x200.jpg" height="200" width="184">
+                            <img src="images/110102021.200x200.jpg" height="200" width="184">
                         </div>
 
                         <form action="">
@@ -143,7 +152,7 @@
                         <span class="articul"></span>
                         <div class="prd_img">
                             <div class="mark"></div>
-                            <img src="../images/110102021.200x200.jpg" height="200" width="184">
+                            <img src="images/110102021.200x200.jpg" height="200" width="184">
                         </div>
 
                         <form action="">
@@ -157,7 +166,7 @@
                         <span class="articul"></span>
                         <div class="prd_img">
                             <div class="mark"></div>
-                            <img src="../images/110102021.200x200.jpg" height="200" width="184">
+                            <img src="images/110102021.200x200.jpg" height="200" width="184">
                         </div>
                         <h5></h5>
                         <form action="">
@@ -173,7 +182,7 @@
                     <span class="articul"></span>
                     <div class="prd_img">
                         <div class="mark"></div>
-                        <img src="../images/110102021.200x200.jpg" height="200" width="184">
+                        <img src="images/110102021.200x200.jpg" height="200" width="184">
                     </div>
                     <h5></h5>
                     <form action="">
@@ -187,7 +196,7 @@
                     <span class="articul"></span>
                     <div class="prd_img">
                         <div class="mark"></div>
-                        <<img src="../images/110102021.200x200.jpg" height="200" width="184">
+                        <<img src="images/110102021.200x200.jpg" height="200" width="184">
                     </div>
                     <h5></h5>
                     <form action="">
@@ -201,7 +210,7 @@
                     <span class="articul"></span>
                     <div class="prd_img">
                         <div class="mark"></div>
-                        <img src="../images/110102021.200x200.jpg" height="200" width="184">
+                        <img src="images/110102021.200x200.jpg" height="200" width="184">
                     </div>
                     <h5></h5>
                     <form action="">
@@ -218,7 +227,7 @@
                     <span class="articul"></span>
                     <div class="prd_img">
                         <div class="mark"></div>
-                        <img src="../images/110102021.200x200.jpg" height="200" width="184">
+                        <img src="images/110102021.200x200.jpg" height="200" width="184">
                     </div>
                     <h5></h5>
                     <form action="">
@@ -231,16 +240,12 @@
      </div>
     </div>
 </div>
-
-
-
 <br>
 <br>
 <br>
 <div class="container">
 <div class="row">
     <h5>Так же в нашем магазине огромный выбор запчастей для:</h5>
-    <img src="" alt="">
     <button>Смотреть каталог</button>
     <img src="" alt="">
     <button>Смотреть каталог</button>
@@ -252,7 +257,7 @@
 </div>
 <br>
 <div class="container">
-    <img src="../images/Logo_nemnogog-Onas.png" height="45" width="146"><h4 class="text-muted">О магазине</h4>
+    <img src="images/Logo_nemnogog-Onas.png" height="45" width="146"><h4 class="text-muted">О магазине</h4>
     <p class="text-muted"><strong>Автомагазин на Святошинской 20</strong> в Киеве насчитывает более 10 000 позиций автотоваров:
         <strong>автозапчасти, аккумуляторы, автолампы, свечи зажигания,  фильтры,
         масла и жидкости, автохимию,</strong> амортизаторы, тормозные системы,  автоэлектроника,
@@ -268,24 +273,14 @@
 </div>
 <div class="container">
     <div class="row">
-        <ul class="list-inline">
-            <li class="list-group-item"><a href="">1</a></li>
-            <li class="list-group-item"><a href="">2</a></li>
-            <li class="list-group-item"><a href="">3</a></li>
-            <li class="list-group-item"><a href="">4</a></li>
-            <li class="list-group-item"><a href="">5</a></li>
-            <li class="list-group-item"><a href="">6</a></li>
-            <li class="list-group-item"><a href="">7</a></li>
-            <li class="list-group-item"><a href="">8</a></li>
-            <li class="list-group-item"><a href="">9</a></li>
-            <button type="button" class="btn" style="float:right;">Способы оплаты</button>
-        </ul>
+        <img src="images/iconki_oplata.jpg" height="44" width="555">
+        <button type="button" class="btn" style="float:right;">Способы оплаты</button>
     </div>
 </div>
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <img src="../images/logo_header.png" height="46" width="270">
+            <img src="images/logo_header.png" height="46" width="270">
             <br>
             <span>© 2010-2015 интернет-магазин «TEXSNAB»</span>
                 <ul class="nav" style="float:right;">

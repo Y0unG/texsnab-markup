@@ -51,7 +51,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('img', function(){
-   return gulp.src('app/img/**/*')
+   return gulp.src('app/images/**/*')
        .pipe(cache(imagemin({
            interlaced: true,
            progressive: true,
@@ -62,7 +62,7 @@ gulp.task('img', function(){
 });
 
 gulp.task('watch', ['browser-sync','css-libs','scripts'], function(){
-    gulp.watch('app/scss/**/*.+(scss|sass)', ['sass']);
+    gulp.watch('app/scss/**/*.+(scss|sass)', ['sass'], browserSync.reload);
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/**/*.js', browserSync.reload);
 });
