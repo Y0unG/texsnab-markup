@@ -16,7 +16,7 @@ body {
   width: 228px;
   float: right; }
 
-.price {
+.price-list {
   background-image: url(../images/bg_geader.jpg); }
 
 .btn-price-list {
@@ -76,7 +76,8 @@ body {
   padding: 0px 0px 0px 6px; }
 
 .image-find {
-  padding: 0; }
+  padding: 0;
+  border: none; }
 
 .marks {
   font-size: 9px;
@@ -107,9 +108,10 @@ body {
   background-color: #EFA700;
   color: #fff;
   text-transform: uppercase;
+  height: 40px;
   line-height: 48px;
   font-weight: 700;
-  padding: 13px 42px 12px 41px; }
+  padding: 0px 12px 12px 51px; }
 
 .watch-catalog {
   background-image: url(../images/bg_dop_menu.jpg);

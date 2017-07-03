@@ -6,7 +6,7 @@ body {
   background-color: #fff;
 
 }
-
+//хедер
 .header {
   margin: 20px auto;
 }
@@ -14,17 +14,16 @@ body {
 .info {
 
 }
-
+//корзина
 .bascket {
   background-color: #f6f6f6;
   padding: 13px 24px 12px 24px;
   border-radius: 4px;
   width: 228px;
   float:right;
-
 }
-
-.price {
+//прайс-лист
+.price-list {
   background-image: url(../images/bg_geader.jpg);
 }
 
@@ -47,7 +46,7 @@ body {
     border-color: orange;
   }
 }
-
+//меню
 .menu{
   background-color: #318BB5 ;
   ul{
@@ -80,6 +79,8 @@ body {
 
 }
 
+
+//поиск товаров
 .find {
   width: 170px;
   height: 27px;
@@ -94,8 +95,12 @@ body {
 
 .image-find {
   padding: 0;
+  border: none;
+
 }
 
+
+//другие марки
 .marks {
   font-size: 9px;
   color: #000000;
@@ -116,6 +121,8 @@ body {
   }
 }
 
+
+//новости
 .card-block {
   width: 191px;
   border: 1px solid #cccccc;
@@ -126,14 +133,15 @@ body {
 }
 
 
-
+//смотреть каталог
 .catalog {
   background-color: #EFA700;
   color: #fff;
   text-transform: uppercase;
+  height: 40px;
   line-height: 48px;
   font-weight: 700;
-  padding: 13px 42px 12px 41px;
+  padding: 0px 12px 12px 51px;
 }
 
 .watch-catalog {
@@ -166,6 +174,7 @@ body {
   }
 }
 
+//способы оплаты
 .payment {
   background: #FAFAFA;
 }
@@ -194,7 +203,7 @@ body {
   }
 }
 
-
+//футер
 .down-header {
   text-align: center;
   font-weight: 500;
