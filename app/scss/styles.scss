@@ -12,24 +12,20 @@ body {
 }
 
 .info {
-  margin-top: -10px;
+
 }
 
 .bascket {
   background-color: #f6f6f6;
   padding: 13px 24px 12px 24px;
   border-radius: 4px;
+  width: 228px;
   float:right;
+
 }
 
 .price {
   background-image: url(../images/bg_geader.jpg);
-}
-
-
-
-.blue {
-  color: blue;
 }
 
 .btn-price-list {
@@ -43,7 +39,7 @@ body {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 600;
-  margin: 20px 0px 0px 31px;
+  margin: 20px 80px 0px 31px;
   float: right;
   text-decoration: none;
   &:hover {
@@ -52,19 +48,200 @@ body {
   }
 }
 
-.collapse {
+.menu{
   background-color: #318BB5 ;
-
-  li {
-    margin-left: 10px;
-
+  ul{
+    margin-right: 5px;
+    font-size: 15px;
+    display: block;
+    float: left;
+    text-decoration: none;
+    padding: 7px 11px 6px 11px;
+    color: #ffffff;
+    background-color: #318BB5
   }
+}
+
+.navbar-nav {
   a {
+    margin-right: 5px;
+    font-size: 15px;
+    display: block;
+    float: left;
+    text-decoration: none;
+    padding: 7px 11px 6px 11px;
+    color: #ffffff;
+    &:hover {
+
+      border-bottom: solid 3px #EFA700;
+      background-color: #318BB5;
+    }
+  }
+
+}
+
+.find {
+  width: 170px;
+  height: 27px;
+  border: none;
+  float: left;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 91%;
+  font-size: 14px;
+  padding: 0px 0px 0px 6px;
+}
+
+.image-find {
+  padding: 0;
+}
+
+.marks {
+  font-size: 9px;
+  color: #000000;
+  font-weight: 600;
+  padding: 0px 4px 0px 0px;
+  margin-top: 15px;
+}
+
+.list-group {
+  width: 263px;
+  a:hover {
     color: #fff;
+    background-color: #EFA700 ;
+    line-height: 43px;
+    width: 263px;
+    border-bottom: 1px solid #fff;
+    padding: 0px 0px 0px 19px;
+  }
+}
+
+.card-block {
+  width: 191px;
+  border: 1px solid #cccccc;
+  padding: 15px 14px 16px 15px;
+  line-height: 13px;
+  margin: 0px 0px 19px 1px;
+  list-style-type: none;
+}
+
+
+
+.catalog {
+  background-color: #EFA700;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 48px;
+  font-weight: 700;
+  padding: 13px 42px 12px 41px;
+}
+
+.watch-catalog {
+  background-image: url(../images/bg_dop_menu.jpg);
+  margin: 0px auto;
+  height: 303px;
+  background-position: center center;
+  min-width: 1010px;
+  overflow: hidden;
+  clear: both;
+  padding-top: 14px;
+  text-align: center;
+}
+
+.btn-watch {
+  background-color: #007302;
+  color: #ffffff;
+  border-radius: 30px;
+  padding: 11px 20px 11px 20px;
+  text-decoration: none;
+  margin-top: 200px;
+  margin-right: 50px;
+  margin-left: 60px;
+  &:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 30px;
+    padding: 11px 20px 11px 20px;
+    text-decoration: none;
+  }
+}
+
+.payment {
+  background: #FAFAFA;
+}
+
+.payments {
+  margin: 10px auto;
+  height: 52px;
+  line-height: 26px;
+  background-position: center center;
+  width: 850px;
+}
+
+.btn-payments {
+  color: #000000;
+  font-size: 13px;
+  margin-left: 60px;
+  height: 30px;
+  width: 133px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 30px;
+  padding: 5px 11px 5px 14px;
+  text-decoration: none;
+  &:hover {
+    color: #e84d07;
   }
 }
 
 
+.down-header {
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.logo-down{
+  float: right;
+}
+
+.about{
+  margin-top: 20px;
+}
+
+.footer {
+  background-color: #F4F4F4
+}
+
+.footer-left {
+  margin: 0px auto;
+  background-color: #F4F4F4;
+  width: 100%;
+  overflow: hidden;
+  clear: both;
+  height: 160px;
+  padding-top: 30px;
+  margin-left: 150px;
+  //text-align: left;
+}
+
+.footer-right {
+  margin-top: -120px;
+  font-size: 13px;
+  text-decoration: underline;
+  list-style-type: none;
+  padding: 3px 0px 0px 0px;
+  line-height: 22px;
+  color: #737373;
+  float: right;
+  li {
+    margin-top: -15px;
+    margin-bottom: 0px;
+  }
+  a:hover {
+    color: #e84d07;
+  }
+}
 
 #tittle-big {
   margin-top: 35px;

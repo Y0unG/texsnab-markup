@@ -24,7 +24,7 @@
 <div class="container header">
     <div class="row">
         <a href="" class="col-xs-3"><img src="images/logo_header.png" height="46" width="270"/></a>
-        <div class="row col-xs-3" info>
+        <div class="row col-xs-3 info">
             <p>“Киевоблагротехпостач” <br>частное акционерное общество <br>магазин автозапчастей</p>
         </div>
         <div class="row col-xs-2">
@@ -33,31 +33,52 @@
         <span>(044) 452-63-31</span>
         <span>zakaz@texsnab.kiev.ua</span>
         </div>
-        <div class="row col-xs-3">
+        <div class="row col-xs-4">
         <button class="btn bascket"><span><img src="images/korzina_icon.png" height="27"
                                                                    width="29"></span> Корзина пуста</button>
         </div>
     </div>
 </div>
-        <div class="container-fluid ">
-            <div class="row">
+<div class="container-fluid menu">
+        <div class="container">
+            <div class="row ">
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse ">
+                <div class="col-md-6 col-xs-12">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Главная</a></li>
                     <li><a href="#">Оплата и доставка</a></li>
                     <li><a href="#">Контакты</a></li>
                     <li><a href="#">О предприятии</a></li>
                 </ul>
-                <div class="">
+                </div>
                 <form class="navbar-form navbar-right">
-                        <input type="text" class="form-control" placeholder="Поиск товара">
-                        <button type="submit" class="image"><i class="fa fa-search"></i></button>
+                        <input type="text" class="form-control find" placeholder="Поиск товара">
+                    <span><button type="submit" class="image form-control image-find"><img src="images/search_ico.png" height="27" width="28"/></i></button></span>
                 </form>
                 </div>
             </div><!-- /.navbar-collapse -->
-            </div>
-        </div><!-- /.container-fluid -->
+            </div><!-- /.container-fluid -->
+</div>
+<!--<nav class="navbar navbar-default">-->
+    <!--<div class="container-fluid">-->
+        <!--&lt;!&ndash; Brand and toggle get grouped for better mobile display &ndash;&gt;-->
+        <!--&lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;-->
+        <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+            <!--<ul class="nav navbar-nav">-->
+                <!--<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
+                <!--<li><a href="#">Link</a></li>-->
+            <!--</ul>-->
+            <!--<form class="navbar-form navbar-right">-->
+                <!--<div class="form-group">-->
+                    <!--<input type="text" class="form-control" placeholder="Search">-->
+                <!--</div>-->
+                <!--<button type="submit" class="btn btn-default">Submit</button>-->
+            <!--</form>-->
+        <!--</div>&lt;!&ndash; /.navbar-collapse &ndash;&gt;-->
+    <!--</div>&lt;!&ndash; /.container-fluid &ndash;&gt;-->
+<!--</nav>-->
+
 
     <div class="container-fluid price">
         <div class="row col-md-7" id="price-list-left">
@@ -73,7 +94,7 @@
 
 <div class="container">
 <div class="row">
-    <span class="col-xs-1">подбор автозапчастей по автомобилю</span>
+    <span class="marks col-xs-1">подбор автозапчастей по автомобилю</span>
     <a href=""><img src="images/shewrole_ico.png" height="71" width="71"></a>
     <a href=""><img src="images/shewrole_ico.png" height="71" width="71"></a>
     <a href=""><img src="images/shewrole_ico.png" height="71" width="71"></a>
@@ -93,6 +114,7 @@
     <div class="row">
     <div class="col-md-3">
         <div class="list-group">
+            <span class="catalog">Каталог товаров </span>
             <a href="#" class="list-group-item">Аксессуары</a>
             <a href="#" class="list-group-item">АКБ</a>
             <a href="#" class="list-group-item">Автолампочки</a>
@@ -113,8 +135,7 @@
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Aperiam autem consectetur deleniti dignissimos eaque eos et
                         expedita iste neque repellendus? Ab dicta, excepturi fuga laborum qui sed sint tempore temporibus.</p>
-                </div>
-                <div class="card-block">
+
                     <span class="text-muted">08.05.2017</span>
                     <a href="#" class="card-link" style="float: right;">Подробнее</a>
                 </div>
@@ -122,8 +143,7 @@
             <div class="card">
                 <div class="card-block">
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, numquam.</p>
-                </div>
-                <div class="card-block">
+
                     <span class="text-muted">08.05.2017</span>
                     <a href="#" class="card-link" style="float: right;">Подробнее</a>
                 </div>
@@ -243,21 +263,28 @@
 <br>
 <br>
 <br>
-<div class="container">
-<div class="row">
-    <h5>Так же в нашем магазине огромный выбор запчастей для:</h5>
-    <button>Смотреть каталог</button>
+
+    <div class="also">
+    <h5 class="down-header">Так же в нашем магазине огромный выбор запчастей для:</h5>
+        <div class="watch-catalog">
+    <button class="btn-watch">Смотреть каталог</button>
     <img src="" alt="">
-    <button>Смотреть каталог</button>
+    <button class="btn-watch">Смотреть каталог</button>
     <img src="" alt="">
-    <button>Смотреть каталог</button>
+    <button class="btn-watch">Смотреть каталог</button>
     <img src="" alt="">
-    <button>Смотреть каталог</button>
-</div>
-</div>
+    <button class="btn-watch">Смотреть каталог</button>
+        </div>
+    </div>
+
 <br>
 <div class="container">
-    <img src="images/Logo_nemnogog-Onas.png" height="45" width="146"><h4 class="text-muted">О магазине</h4>
+    <div class="col-md-7 col-xs-7 logo-down">
+    <img src="images/Logo_nemnogog-Onas.png" height="45" width="146">
+    </div>
+    <div class="about">
+
+        <h4 class="text-muted">О магазине</h4>
     <p class="text-muted"><strong>Автомагазин на Святошинской 20</strong> в Киеве насчитывает более 10 000 позиций автотоваров:
         <strong>автозапчасти, аккумуляторы, автолампы, свечи зажигания,  фильтры,
         масла и жидкости, автохимию,</strong> амортизаторы, тормозные системы,  автоэлектроника,
@@ -270,27 +297,32 @@
     <p class="text-muted">*запчасти <strong>Chevrolet (шевроле):</strong> Chevrolet lacceti, Aveo chevrolet;*<strong>запчасти Daewoo</strong> (Део): Lanos (ланос), Sens, Nubira, Nexia;    *запчасти Chery (Чери) и Geely(Джили);</p>
     <p class="text-muted">*<strong>запчасти УАЗ,</strong> Богдан, ТАТА, КАМАЗ, МАЗ, ЗИЛ - 130;</p>
     <p class="text-muted">* товары для ТО: <strong>автомасло, свеча зажигания, фильтр</strong> воздушный, фильтр масляный, фильтр топливный, <strong>тормозная жидкость.</strong></p>
-</div>
-<div class="container">
-    <div class="row">
-        <img src="images/iconki_oplata.jpg" height="44" width="555">
-        <button type="button" class="btn" style="float:right;">Способы оплаты</button>
     </div>
 </div>
-<div class="container">
+<div class="container-fluid payment">
     <div class="row">
-        <div class="col-md-12">
-            <img src="images/logo_header.png" height="46" width="270">
-            <br>
-            <span>© 2010-2015 интернет-магазин «TEXSNAB»</span>
-                <ul class="nav" style="float:right;">
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Оплата</a></li>
-                    <li><a href="#">Доставка</a></li>
-                    <li><a href="#">Статьи и новости</a></li>
-                    <li><a href="#">О предприятии</a></li>
-                </ul>
+        <div class="payments">
+                <img src="images/iconki_oplata.jpg" height="44" width="555">
+                <button type="button" class="btn btn-payments">Способы оплаты</button>
         </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row footer">
+            <div class="footer-left col-md-6">
+                <img src="images/logo_header.png" height="46" width="270">
+                <br>
+                <span>© 2010-2015 интернет-магазин «TEXSNAB»</span>
+            </div>
+                <div class="footer-right col-md-5">
+                    <ul class="nav">
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Оплата</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Статьи и новости</a></li>
+                        <li><a href="#">О предприятии</a></li>
+                    </ul>
+                </div>
     </div>
 </div>
 <!--Import jQuery before materialize.js-->
