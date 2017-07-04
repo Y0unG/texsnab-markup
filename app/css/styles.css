@@ -5,17 +5,48 @@ body {
   color: #333;
   background-color: #fff; }
 
-.header {
-  margin: 20px auto; }
+/*
+  Colors
+ */
+.blue {
+  color: #318bb5; }
 
-.bascket {
-  background-color: #f6f6f6;
-  padding: 13px 24px 12px 24px;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
-  width: 228px;
-  float: right; }
+.dark-gray {
+  color: #646566; }
 
+/*
+  Header
+ */
+header {
+  padding: 10px 0; }
+  header a > img {
+    padding-top: 5px; }
+  header .desc {
+    padding: 0 20px; }
+  header address {
+    margin-bottom: 15px;
+    line-height: 1.2; }
+    header address a {
+      color: #000;
+      font-size: 20px; }
+      header address a:hover {
+        text-decoration: none; }
+      header address a span {
+        font-size: 14px; }
+  header .btn-basket {
+    background-color: #f6f6f6;
+    text-align: left;
+    margin-top: 5px;
+    padding: 12px 24px;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+    min-width: 200px; }
+    header .btn-basket img {
+      margin-right: 10px; }
+
+/*
+  !Header
+ */
 .price-list {
   background-image: url(../images/bg_geader.jpg); }
 

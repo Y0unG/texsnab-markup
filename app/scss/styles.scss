@@ -1,28 +1,71 @@
+@import "variables";
+
 body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
+  font-size: $fs_main;
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
-
-}
-//хедер
-.header {
-  margin: 20px auto;
 }
 
-.info {
+/*
+  Colors
+ */
+.blue {
+  color: $clr_blue;
+}
+.dark-gray {
+  color: $clr_dark_gray;
+}
 
+/*
+  Header
+ */
+
+header {
+  padding: 10px 0;
+
+  a > img {
+    padding-top: 5px;
+  }
+
+  .desc {
+    padding: 0 20px;
+  }
+
+  address {
+    margin-bottom: 15px;
+    line-height: 1.2;
+    a {
+      color: $clr_black;
+      &:hover {
+        text-decoration: none;
+      }
+      span {
+        font-size: $fs_main;
+      }
+      font-size: $fs_20;
+    }
+  }
+
+  .btn-basket {
+    background-color: #f6f6f6;
+    text-align: left;
+    margin-top: 5px;
+    padding: 12px 24px;
+    border-radius: 4px;
+    min-width: 200px;
+    img {
+      margin-right: 10px;
+    }
+  }
 }
-//корзина
-.bascket {
-  background-color: #f6f6f6;
-  padding: 13px 24px 12px 24px;
-  border-radius: 4px;
-  width: 228px;
-  float:right;
-}
-//прайс-лист
+
+/*
+  !Header
+ */
+
+
 .price-list {
   background-image: url(../images/bg_geader.jpg);
 }
@@ -46,7 +89,7 @@ body {
     border-color: orange;
   }
 }
-//меню
+
 .menu{
   background-color: #318BB5 ;
   ul{
@@ -78,14 +121,12 @@ body {
   }
 }
 
-//популярные товары
 .title{
   font-size: 17px;
   color: #F03770;
   float: left;
 }
 
-//продукты
 .product {
   text-align: center;
   height: 325px;
@@ -131,7 +172,6 @@ body {
   }
 }
 
-//поиск товаров
 .find {
   width: 170px;
   height: 27px;
@@ -150,8 +190,6 @@ body {
 
 }
 
-
-//другие марки
 .marks {
   font-size: 9px;
   color: #000000;
@@ -172,8 +210,6 @@ body {
   }
 }
 
-
-//новости
 .card-block {
   width: 191px;
   border: 1px solid #cccccc;
@@ -183,8 +219,6 @@ body {
   list-style-type: none;
 }
 
-
-//смотреть каталог
 .catalog {
   background-color: #EFA700;
   color: #fff;
@@ -225,7 +259,6 @@ body {
   }
 }
 
-//способы оплаты
 .payment {
   background: #FAFAFA;
 }
@@ -254,7 +287,6 @@ body {
   }
 }
 
-//футер
 .down-header {
   text-align: center;
   font-weight: 500;
@@ -282,7 +314,6 @@ body {
   height: 160px;
   padding-top: 30px;
   margin-left: 150px;
-  //text-align: left;
 }
 
 .footer-right {
