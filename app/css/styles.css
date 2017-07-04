@@ -17,7 +17,8 @@ body {
   float: right; }
 
 .price-list {
-  background-image: url(../images/bg_geader.jpg); }
+  background-image: url(../images/bg_geader.jpg);
+  height: 363px; }
 
 .btn-price-list {
   color: #fff;
@@ -60,7 +61,40 @@ body {
   color: #ffffff; }
   .navbar-nav a:hover {
     border-bottom: solid 3px #EFA700;
-    background-color: #318BB5; }
+    background: none; }
+
+.tittle-small {
+  margin-top: 30px; }
+
+.product-best {
+  height: 392px;
+  width: 365px; }
+
+.product-best-item {
+  margin-top: -150px;
+  float: right; }
+
+.articul-best {
+  font-size: 12px;
+  float: left;
+  color: #737373; }
+
+.prd_img-best {
+  margin-top: -200px;
+  margin-left: 40px; }
+
+.prd_link-best {
+  text-decoration: underline; }
+
+.price-best {
+  color: #FFFFFF;
+  background-color: #168602;
+  font-size: 15px;
+  -webkit-border-radius: 21px;
+          border-radius: 21px;
+  font-weight: 700;
+  padding: 7px 11px 7px 11px;
+  text-align: center; }
 
 .title {
   font-size: 17px;
@@ -69,8 +103,12 @@ body {
 
 .product {
   text-align: center;
-  height: 325px;
-  width: 224px; }
+  height: 350px;
+  width: 224px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 10px;
+  margin-left: 10px; }
   .product:hover {
     border: solid 1px #EFA700; }
   .product .articul {
@@ -94,21 +132,31 @@ body {
     float: right;
     padding: 0;
     margin-top: 14px; }
-  .product .form-price {
-    margin-bottom: 10px; }
+
+.prd_sale {
+  padding-top: 10px;
+  font-size: 17px;
+  color: #006EA2;
+  float: left; }
 
 .find {
-  width: 170px;
-  height: 27px;
-  border: none;
   float: left;
   -webkit-border-top-left-radius: 5px;
           border-top-left-radius: 5px;
   -webkit-border-bottom-left-radius: 5px;
           border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 0px;
+          border-bottom-right-radius: 0px;
+  -webkit-border-top-right-radius: 0px;
+          border-top-right-radius: 0px;
   width: 91%;
   font-size: 14px;
   padding: 0px 0px 0px 6px; }
+
+.form-control {
+  margin-top: 15px;
+  width: 170px;
+  height: 27px; }
 
 .image-find {
   padding: 0;
@@ -246,6 +294,3 @@ body {
   margin-left: 160px;
   width: 568px;
   height: 185px; }
-
-.tittle-small {
-  margin-top: 35px; }

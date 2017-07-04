@@ -11,9 +11,6 @@ body {
   margin: 20px auto;
 }
 
-.info {
-
-}
 //корзина
 .bascket {
   background-color: #f6f6f6;
@@ -25,6 +22,7 @@ body {
 //прайс-лист
 .price-list {
   background-image: url(../images/bg_geader.jpg);
+  height: 363px;
 }
 
 .btn-price-list {
@@ -73,10 +71,49 @@ body {
     &:hover {
 
       border-bottom: solid 3px #EFA700;
-      background-color: #318BB5;
+      background: none;
     }
   }
 }
+
+.tittle-small{
+  margin-top: 30px;
+}
+
+//product-best
+.product-best {
+  height: 392px;
+  width: 365px;
+}
+  .product-best-item {
+    margin-top: -150px;
+float: right;
+  }
+
+.articul-best {
+  font-size: 12px;
+  float: left;
+  color: #737373;
+  }
+
+.prd_img-best {
+  margin-top: -200px;
+  margin-left: 40px;
+  }
+
+.prd_link-best {
+  text-decoration: underline;
+  }
+.price-best {
+  color: #FFFFFF;
+  background-color: #168602;
+  font-size: 15px;
+  border-radius: 21px;
+  font-weight: 700;
+  padding: 7px 11px 7px 11px;
+  text-align: center;
+  }
+
 
 //популярные товары
 .title{
@@ -88,12 +125,15 @@ body {
 //продукты
 .product {
   text-align: center;
-  height: 325px;
+  height: 350px;
   width: 224px;
-
-
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
   &:hover {
     border: solid 1px #EFA700;
+
   }
   .articul {
     font-size: 12px;
@@ -125,28 +165,38 @@ body {
     padding: 0;
     margin-top: 14px;
   }
+}
 
-  .form-price{
-    margin-bottom: 10px;
-  }
+//уцененные товары
+.prd_sale{
+  padding-top: 10px;
+  font-size: 17px;
+  color: #006EA2;
+  float: left;
 }
 
 //поиск товаров
 .find {
-  width: 170px;
-  height: 27px;
-  border: none;
   float: left;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
   width: 91%;
   font-size: 14px;
   padding: 0px 0px 0px 6px;
 }
 
+.form-control {
+  margin-top: 15px;
+  width: 170px;
+  height: 27px;
+}
+
 .image-find {
   padding: 0;
   border: none;
+
 
 }
 
@@ -311,6 +361,3 @@ body {
   height: 185px;
 }
 
-.tittle-small {
-  margin-top: 35px;
-}
