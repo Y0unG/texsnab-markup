@@ -44,6 +44,24 @@ header {
     header .btn-basket img {
       margin-right: 10px; }
 
+.menu {
+  background-color: #318bb5; }
+  .menu ul {
+    color: #ffffff;
+    height: 30px; }
+
+.navbar-nav a {
+  margin-right: 5px;
+  font-size: 15px;
+  display: block;
+  float: left;
+  text-decoration: none;
+  padding: 7px 11px 6px 11px;
+  color: #ffffff; }
+  .navbar-nav a:hover {
+    border-bottom: solid 3px #EFA700;
+    background-color: #318BB5; }
+
 /*
   !Header
  */
@@ -68,30 +86,6 @@ header {
   .btn-price-list:hover {
     color: orange;
     border-color: orange; }
-
-.menu {
-  background-color: #318BB5; }
-  .menu ul {
-    margin-right: 5px;
-    font-size: 15px;
-    display: block;
-    float: left;
-    text-decoration: none;
-    padding: 7px 11px 6px 11px;
-    color: #ffffff;
-    background-color: #318BB5; }
-
-.navbar-nav a {
-  margin-right: 5px;
-  font-size: 15px;
-  display: block;
-  float: left;
-  text-decoration: none;
-  padding: 7px 11px 6px 11px;
-  color: #ffffff; }
-  .navbar-nav a:hover {
-    border-bottom: solid 3px #EFA700;
-    background-color: #318BB5; }
 
 .title {
   font-size: 17px;

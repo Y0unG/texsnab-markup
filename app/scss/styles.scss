@@ -61,6 +61,31 @@ header {
   }
 }
 
+.menu{
+  background-color: $clr_blue;
+  ul{
+    color: #ffffff;
+    height: 30px;
+  }
+}
+
+.navbar-nav {
+  a {
+    margin-right: 5px;
+    font-size: 15px;
+    display: block;
+    float: left;
+    text-decoration: none;
+    padding: 7px 11px 6px 11px;
+    color: #ffffff;
+    &:hover {
+
+      border-bottom: solid 3px #EFA700;
+      background-color: #318BB5;
+    }
+  }
+}
+
 /*
   !Header
  */
@@ -87,37 +112,6 @@ header {
   &:hover {
     color: orange;
     border-color: orange;
-  }
-}
-
-.menu{
-  background-color: #318BB5 ;
-  ul{
-    margin-right: 5px;
-    font-size: 15px;
-    display: block;
-    float: left;
-    text-decoration: none;
-    padding: 7px 11px 6px 11px;
-    color: #ffffff;
-    background-color: #318BB5
-  }
-}
-
-.navbar-nav {
-  a {
-    margin-right: 5px;
-    font-size: 15px;
-    display: block;
-    float: left;
-    text-decoration: none;
-    padding: 7px 11px 6px 11px;
-    color: #ffffff;
-    &:hover {
-
-      border-bottom: solid 3px #EFA700;
-      background-color: #318BB5;
-    }
   }
 }
 
