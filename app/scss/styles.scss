@@ -76,9 +76,60 @@ body {
       background-color: #318BB5;
     }
   }
-
 }
 
+//популярные товары
+.title{
+  font-size: 17px;
+  color: #F03770;
+  float: left;
+}
+
+//продукты
+.product {
+  text-align: center;
+  height: 325px;
+  width: 224px;
+
+
+  &:hover {
+    border: solid 1px #EFA700;
+  }
+  .articul {
+    font-size: 12px;
+    float: left;
+    color: #737373;
+  }
+
+  .prd_img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .prd_link {
+    text-decoration: underline;
+
+  }
+  .price {
+    margin-top: 15px;
+    color: #fff;
+    background-color: #EFA700;
+    width: 125px;
+    Height: 32px;
+    margin-left : 30px;
+    margin-bottom: 20px;
+
+  }
+  .btn-buy {
+    float:right;
+    padding: 0;
+    margin-top: 14px;
+  }
+
+  .form-price{
+    margin-bottom: 10px;
+  }
+}
 
 //поиск товаров
 .find {

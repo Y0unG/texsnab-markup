@@ -62,6 +62,41 @@ body {
     border-bottom: solid 3px #EFA700;
     background-color: #318BB5; }
 
+.title {
+  font-size: 17px;
+  color: #F03770;
+  float: left; }
+
+.product {
+  text-align: center;
+  height: 325px;
+  width: 224px; }
+  .product:hover {
+    border: solid 1px #EFA700; }
+  .product .articul {
+    font-size: 12px;
+    float: left;
+    color: #737373; }
+  .product .prd_img {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .product .prd_link {
+    text-decoration: underline; }
+  .product .price {
+    margin-top: 15px;
+    color: #fff;
+    background-color: #EFA700;
+    width: 125px;
+    Height: 32px;
+    margin-left: 30px;
+    margin-bottom: 20px; }
+  .product .btn-buy {
+    float: right;
+    padding: 0;
+    margin-top: 14px; }
+  .product .form-price {
+    margin-bottom: 10px; }
+
 .find {
   width: 170px;
   height: 27px;
