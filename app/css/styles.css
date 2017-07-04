@@ -241,11 +241,11 @@ body {
   .footer-right a:hover {
     color: #e84d07; }
 
-#tittle-big {
+.tittle-big {
   margin-top: 35px;
   margin-left: 160px;
   width: 568px;
   height: 185px; }
 
-#tittle-small {
+.tittle-small {
   margin-top: 35px; }
