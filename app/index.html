@@ -1,277 +1,345 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Texsnab</title>
-
+    <script src="js/libs/jquery-3.2.1.min.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/app.component.js"></script>
 </head>
 
 
 <body>
-<div class="container header">
-    <div class="row">
-        <a href="" class="col-xs-3"><img src="images/logo_header.png" height="46" width="270"/></a>
-        <div class="row col-xs-3 info">
-            <p>“Киевоблагротехпостач” <br>частное акционерное общество <br>магазин автозапчастей</p>
-        </div>
-        <div class="row col-xs-2">
-        <span>(044) 452-63-30</span>
-            <br>
-        <span>(044) 452-63-31</span>
-        <span>zakaz@texsnab.kiev.ua</span>
-        </div>
-        <div class="row col-xs-4">
-        <button class="btn bascket"><span><img src="images/korzina_icon.png" height="27"
-                                                                   width="29"></span> Корзина пуста</button>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-3">
+                <a href="/"><img src="images/logo_header.png" /></a>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <p class="dark-gray desc"><span class="blue">“Киевоблагротехпостач”</span><br/>
+                    частное акционерное общество<br/>
+                    <span class="blue">магазин автозапчастей</span>
+                </p>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <address>
+                    <a href="tel:+380444526330"><span class="blue">(044)</span> 452-63-30</a><br/>
+                    <a href="tel:+380444526330"><span class="blue">(044)</span> 452-63-31</a><br/>
+                    <a href="mailto:zakaz@texsnab.kiev.ua"><span class="blue">zakaz@texsnab.kiev.ua</span></a><br/>
+                </address>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <button class="btn btn-basket pull-right" disabled>
+                    <img src="images/korzina_icon.png">Корзина пуста</button>
+            </div>
         </div>
     </div>
-</div>
-<div class="container-fluid menu">
+    <div class="menu">
         <div class="container">
             <div class="row ">
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse ">
-                <div class="col-md-6 col-xs-12">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Главная</a></li>
-                    <li><a href="#">Оплата и доставка</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">О предприятии</a></li>
-                </ul>
-                </div>
-                <form class="navbar-form navbar-right">
-                        <input type="text" class="form-control find" placeholder="Поиск товара">
-                    <span><button type="submit" class="image form-control image-find"><img src="images/search_ico.png" height="27" width="28"/></i></button></span>
-                </form>
-                </div>
-            </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-</div>
-<!--<nav class="navbar navbar-default">-->
-    <!--<div class="container-fluid">-->
-        <!--&lt;!&ndash; Brand and toggle get grouped for better mobile display &ndash;&gt;-->
-        <!--&lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;-->
-        <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
-            <!--<ul class="nav navbar-nav">-->
-                <!--<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
-                <!--<li><a href="#">Link</a></li>-->
-            <!--</ul>-->
-            <!--<form class="navbar-form navbar-right">-->
-                <!--<div class="form-group">-->
-                    <!--<input type="text" class="form-control" placeholder="Search">-->
-                <!--</div>-->
-                <!--<button type="submit" class="btn btn-default">Submit</button>-->
-            <!--</form>-->
-        <!--</div>&lt;!&ndash; /.navbar-collapse &ndash;&gt;-->
-    <!--</div>&lt;!&ndash; /.container-fluid &ndash;&gt;-->
-<!--</nav>-->
-
-
-    <div class="container-fluid price-list">
-        <div class="row col-md-7">
-            <img class="tittle-big" src="images/img_tittle_header.png" height="185" width="568">
-            <br>
-            <button type="button" class="btn-price-list">Прайс лист</button>
-        </div>
-        <div class="row col-md-5">
-        <img class="tittle-small" src="images/img_tittle_small.png" height="285" width="346">
-        </div>
-
-    </div>
-
-<div class="container">
-<div class="row">
-    <span class="marks col-xs-1">подбор автозапчастей по автомобилю</span>
-    <a href=""><img src="images/shewrole_ico.png" height="71" width="71"></a>
-    <a href=""><img src="images/shewrole_ico.png" height="71" width="71"></a>
-    <a href=""><img src="images/shewrole_ico.png" height="71" width="71"></a>
-    <a href=""><img src="images/shewrole_ico.png" height="71" width="71"></a>
-    <a href=""><img src="images/shewrole_ico.png" height="71" width="71"></a>
-    <a href=""><img src="images/shewrole_ico.png" height="71" width="71"></a>
-    <a href=""><img src="images/shewrole_ico.png" height="71" width="71"></a>
-    <a href=""><img src="images/shewrole_ico.png" height="71" width="71"></a>
-    <a href=""><img src="images/shewrole_ico.png" height="71" width="71"></a>
-    <a href=""><img src="images/shewrole_ico.png" height="71" width="71"></a>
-    <a href=""><img src="images/shewrole_ico.png" height="71" width="71"></a>
-    <a href=""><img src="images/shewrole_ico.png" height="71" width="71"></a>
-</div>
-</div>
-<br>
-<div class="container">
-    <div class="row">
-    <div class="col-md-3">
-        <div class="list-group">
-            <span class="catalog list-group-item">Каталог товаров </span>
-            <a href="#" class="list-group-item">Аксессуары</a>
-            <a href="#" class="list-group-item">АКБ</a>
-            <a href="#" class="list-group-item">Автолампочки</a>
-            <a href="#" class="list-group-item">Автохимия</a>
-            <a href="#" class="list-group-item">Автошины</a>
-        </div>
-
-        <img src="images/Sale_big.jpg" height="171" width="238">
-        <div class="watched">
-
-        <h5>Вы просматривали:</h5>
-            <a href=""><img src="images/170001467.50x50.jpg" height="50" width="46"></a>
-        </div>
-        <div class="news">
-            <h5><a href="">Новости, </a>статьи и обзоры</h5>
-            <div class="card">
-                <div class="card-block">
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Aperiam autem consectetur deleniti dignissimos eaque eos et
-                        expedita iste neque repellendus? Ab dicta, excepturi fuga laborum qui sed sint tempore temporibus.</p>
-
-                    <span class="text-muted">08.05.2017</span>
-                    <a href="#" class="card-link" style="float: right;">Подробнее</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-block">
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, numquam.</p>
-
-                    <span class="text-muted">08.05.2017</span>
-                    <a href="#" class="card-link" style="float: right;">Подробнее</a>
+                <div class="collapse navbar-collapse ">
+                    <div class="col-md-6 col-xs-12">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Главная</a></li>
+                            <li><a href="#">Оплата и доставка</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">О предприятии</a></li>
+                        </ul>
+                    </div>
+                    <div class="pull-right search-wrapper">
+                        <input type="text">
+                        <button class="glyphicon glyphicon-search" aria-hidden="true"></button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-xs-12 col-md-9 prds_wrapper">
-        <span class="title">Популярные товары:</span>
-        <img src="images/pupolar_products.png" height="9" width="715"/>
+</header>
+<div class="jumbotron">
+    <div class="container">
         <div class="row">
-                <div class="col-xs-12 col-sm-4 product">
-                    <a href="" class="prd">
-                        <span class="articul">Артикул. 110102021</span>
-                        <div>
-                            <!--<div class="mark"></div>-->
-                            <img src="images/110102021.200x200.jpg" height="188" width="160"  class="prd_img">
-                        </div>
-                        <span class="prd_link"><a href="">а-шина газель кама-232 б-к 185/75R16С</a></span>
-
-                        <form action="" class="form-price">
-                            <div class="row btn-price">
-                            <div class="price row col-xs-8">
-                                <span>1284.00 грн</span>
+            <div class="col-md-7">
+                <img class="tittle-big" src="images/img_tittle_header.png" height="185" width="568">
+                <button type="button" class="btn-price-list pull-right">Прайс лист</button>
+            </div>
+            <div class="col-md-5 best-pr-wrapper">
+                <img class="tittle-small" src="images/img_tittle_small.png" height="285" width="346">
+                <div class="best-pr">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <div class="image">
+                                <a href="/"><img src="images/110102021.200x200.jpg" alt=""></a>
                             </div>
-                                <div class="row col-xs-4">
-                            <button type="submit" class="btn btn-buy"><img src="images/kupit_ico.png" height="32"
-                                                                           width="37"/></button>
-                                </div>
-                            </div>
-                        </form>
-                    </a>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <a href="" class="prd">
-                        <span class="articul"></span>
-                        <div class="prd_img">
-                            <div class="mark"></div>
-                            <img src="images/110102021.200x200.jpg" height="200" width="184">
                         </div>
-
-                        <form action="">
-                            <div class="price"></div>
-                            <button type="submit" class="btn">order</button>
-                        </form>
-                    </a>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <a href="" class="prd">
-                        <span class="articul"></span>
-                        <div class="prd_img">
-                            <div class="mark"></div>
-                            <img src="images/110102021.200x200.jpg" height="200" width="184">
+                        <div class="col-xs-4">
+                            <a href="/" >фильтр оливы коdfdsfsdfsdfdfdfdfdfsлна 100434342</a><br/>
+                            <small>Артикул 300000096</small><br/>
+                            <span class="price">30.00 грн</span><br/>
+                            <a href="/">Подробнее</a>
                         </div>
-                        <h5></h5>
-                        <form action="">
-                            <div class="price"></div>
-                            <button type="submit" class="btn">order</button>
-                        </form>
-                    </a>
+                    </div>
                 </div>
-            </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-4">
-                <a href="" class="prd">
-                    <span class="articul"></span>
-                    <div class="prd_img">
-                        <div class="mark"></div>
-                        <img src="images/110102021.200x200.jpg" height="200" width="184">
-                    </div>
-                    <h5></h5>
-                    <form action="">
-                        <div class="price"></div>
-                        <button type="submit" class="btn">order</button>
-                    </form>
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-4">
-                <a href="" class="prd">
-                    <span class="articul"></span>
-                    <div class="prd_img">
-                        <div class="mark"></div>
-                        <<img src="images/110102021.200x200.jpg" height="200" width="184">
-                    </div>
-                    <h5></h5>
-                    <form action="">
-                        <div class="price"></div>
-                        <button type="submit" class="btn">order</button>
-                    </form>
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-4">
-                <a href="" class="prd">
-                    <span class="articul"></span>
-                    <div class="prd_img">
-                        <div class="mark"></div>
-                        <img src="images/110102021.200x200.jpg" height="200" width="184">
-                    </div>
-                    <h5></h5>
-                    <form action="">
-                        <div class="price"></div>
-                        <button type="submit" class="btn">order</button>
-                    </form>
-                </a>
             </div>
         </div>
-        <span>Уценённые товары:</span>
-        <div class="row">
-            <div class="col-xs-12 col-sm-4">
-                <a href="" class="prd">
-                    <span class="articul"></span>
-                    <div class="prd_img">
-                        <div class="mark"></div>
-                        <img src="images/110102021.200x200.jpg" height="200" width="184">
-                    </div>
-                    <h5></h5>
-                    <form action="">
-                        <div class="price"></div>
-                        <button type="submit" class="btn">order</button>
-                    </form>
-                </a>
-            </div>
-        </div>
-     </div>
     </div>
 </div>
-<br>
-<br>
-<br>
+
+<div class="cat-slider-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <span class="marks">подбор автозапчастей по автомобилю</span>
+                <a href="/"><img src="images/shewrole_ico.png"></a>
+                <a href="/"><img src="images/shewrole_ico.png"></a>
+                <a href="/"><img src="images/shewrole_ico.png"></a>
+                <a href="/"><img src="images/shewrole_ico.png"></a>
+                <a href="/"><img src="images/shewrole_ico.png"></a>
+                <a href="/"><img src="images/shewrole_ico.png"></a>
+                <a href="/"><img src="images/shewrole_ico.png"></a>
+                <a href="/"><img src="images/shewrole_ico.png"></a>
+                <a href="/"><img src="images/shewrole_ico.png"></a>
+                <a href="/"><img src="images/shewrole_ico.png"></a>
+                <a href="/"><img src="images/shewrole_ico.png"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="catalog-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-3">
+                <div class="list-group">
+                    <span class="catalog list-group-item">Каталог товаров </span>
+                    <a href="#" class="list-group-item">Аксессуары</a>
+                    <a href="#" class="list-group-item">АКБ</a>
+                    <a href="#" class="list-group-item">Автолампочки</a>
+                    <a href="#" class="list-group-item">Автохимия</a>
+                    <a href="#" class="list-group-item">Автошины</a>
+                </div>
+
+                <img src="images/Sale_big.jpg" height="171" width="238">
+                <div class="watched">
+
+                    <h5>Вы просматривали:</h5>
+                    <a href=""><img src="images/170001467.50x50.jpg" height="50" width="46"></a>
+                </div>
+                <div class="news">
+                    <h5><a href="">Новости, </a>статьи и обзоры</h5>
+                    <div class="card">
+                        <div class="card-block">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Aperiam autem consectetur deleniti dignissimos eaque eos et
+                                expedita iste neque repellendus? Ab dicta, excepturi fuga laborum qui sed sint tempore temporibus.</p>
+
+                            <span class="text-muted">08.05.2017</span>
+                            <a href="#" class="card-link" style="float: right;">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-block">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, numquam.</p>
+
+                            <span class="text-muted">08.05.2017</span>
+                            <a href="#" class="card-link" style="float: right;">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-9 products">
+                <h2>Популярные товары:</h2>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="product">
+                            <span class="articul">Артикул. 110102021</span>
+                            <a href="/">
+                                <img src="images/110102021.200x200.jpg" class="prd_img">
+                                <span>а-шина газель кама-232 б-к 185/75R16С</span>
+                            </a>
+                            <form action="" class="form-price">
+                                <div class="price">1284.00 грн</div>
+                                <button type="submit" class="btn btn-buy">
+                                    <span class="glyphicon glyphicon-shopping-cart"  aria-hidden="true"></span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="product">
+                            <span class="articul">Артикул. 110102021</span>
+                            <a href="/">
+                                <img src="images/110102021.200x200.jpg" class="prd_img">
+                                <span>а-шина газель кама-232 б-к 185/75R16С</span>
+                            </a>
+                            <form action="" class="form-price">
+                                <div class="price">1284.00 грн</div>
+                                <button type="submit" class="btn btn-buy">
+                                    <span class="glyphicon glyphicon-shopping-cart"  aria-hidden="true"></span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="product">
+                            <span class="articul">Артикул. 110102021</span>
+                            <a href="/">
+                                <img src="images/110102021.200x200.jpg" class="prd_img">
+                                <span>а-шина газель кама-232 б-к 185/75R16С</span>
+                            </a>
+                            <form action="" class="form-price">
+                                <div class="price">1284.00 грн</div>
+                                <button type="submit" class="btn btn-buy">
+                                    <span class="glyphicon glyphicon-shopping-cart"  aria-hidden="true"></span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="product">
+                            <span class="articul">Артикул. 110102021</span>
+                            <a href="/">
+                                <img src="images/110102021.200x200.jpg" class="prd_img">
+                                <span>а-шина газель кама-232 б-к 185/75R16С</span>
+                            </a>
+                            <form action="" class="form-price">
+                                <div class="price">1284.00 грн</div>
+                                <button type="submit" class="btn btn-buy">
+                                    <span class="glyphicon glyphicon-shopping-cart"  aria-hidden="true"></span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="product">
+                            <span class="articul">Артикул. 110102021</span>
+                            <a href="/">
+                                <img src="images/110102021.200x200.jpg" class="prd_img">
+                                <span>а-шина газель кама-232 б-к 185/75R16С</span>
+                            </a>
+                            <form action="" class="form-price">
+                                <div class="price">1284.00 грн</div>
+                                <button type="submit" class="btn btn-buy">
+                                    <span class="glyphicon glyphicon-shopping-cart"  aria-hidden="true"></span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="product">
+                            <span class="articul">Артикул. 110102021</span>
+                            <a href="/">
+                                <img src="images/110102021.200x200.jpg" class="prd_img">
+                                <span>а-шина газель кама-232 б-к 185/75R16С</span>
+                            </a>
+                            <form action="" class="form-price">
+                                <div class="price">1284.00 грн</div>
+                                <button type="submit" class="btn btn-buy">
+                                    <span class="glyphicon glyphicon-shopping-cart"  aria-hidden="true"></span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <h2>Уценённые товары:</h2>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="product">
+                            <span class="articul">Артикул. 110102021</span>
+                            <a href="/">
+                                <img src="images/110102021.200x200.jpg" class="prd_img">
+                                <span>а-шина газель кама-232 б-к 185/75R16С</span>
+                            </a>
+                            <form action="" class="form-price">
+                                <div class="price">1284.00 грн</div>
+                                <button type="submit" class="btn btn-buy">
+                                    <span class="glyphicon glyphicon-shopping-cart"  aria-hidden="true"></span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="product">
+                            <span class="articul">Артикул. 110102021</span>
+                            <a href="/">
+                                <img src="images/110102021.200x200.jpg" class="prd_img">
+                                <span>а-шина газель кама-232 б-к 185/75R16С</span>
+                            </a>
+                            <form action="" class="form-price">
+                                <div class="price">1284.00 грн</div>
+                                <button type="submit" class="btn btn-buy">
+                                    <span class="glyphicon glyphicon-shopping-cart"  aria-hidden="true"></span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="product">
+                            <span class="articul">Артикул. 110102021</span>
+                            <a href="/">
+                                <img src="images/110102021.200x200.jpg" class="prd_img">
+                                <span>а-шина газель кама-232 б-к 185/75R16С</span>
+                            </a>
+                            <form action="" class="form-price">
+                                <div class="price">1284.00 грн</div>
+                                <button type="submit" class="btn btn-buy">
+                                    <span class="glyphicon glyphicon-shopping-cart"  aria-hidden="true"></span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="product">
+                            <span class="articul">Артикул. 110102021</span>
+                            <a href="/">
+                                <img src="images/110102021.200x200.jpg" class="prd_img">
+                                <span>а-шина газель кама-232 б-к 185/75R16С</span>
+                            </a>
+                            <form action="" class="form-price">
+                                <div class="price">1284.00 грн</div>
+                                <button type="submit" class="btn btn-buy">
+                                    <span class="glyphicon glyphicon-shopping-cart"  aria-hidden="true"></span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="product">
+                            <span class="articul">Артикул. 110102021</span>
+                            <a href="/">
+                                <img src="images/110102021.200x200.jpg" class="prd_img">
+                                <span>а-шина газель кама-232 б-к 185/75R16С</span>
+                            </a>
+                            <form action="" class="form-price">
+                                <div class="price">1284.00 грн</div>
+                                <button type="submit" class="btn btn-buy">
+                                    <span class="glyphicon glyphicon-shopping-cart"  aria-hidden="true"></span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="product">
+                            <span class="articul">Артикул. 110102021</span>
+                            <a href="/">
+                                <img src="images/110102021.200x200.jpg" class="prd_img">
+                                <span>а-шина газель кама-232 б-к 185/75R16С</span>
+                            </a>
+                            <form action="" class="form-price">
+                                <div class="price">1284.00 грн</div>
+                                <button type="submit" class="btn btn-buy">
+                                    <span class="glyphicon glyphicon-shopping-cart"  aria-hidden="true"></span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
     <div class="also">
     <h5 class="down-header">Так же в нашем магазине огромный выбор запчастей для:</h5>
@@ -334,8 +402,6 @@
                 </div>
     </div>
 </div>
-<!--Import jQuery before materialize.js-->
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
+
 </body>
 </html>
