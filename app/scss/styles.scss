@@ -207,6 +207,16 @@ header {
 
 .catalog-wrapper {
   margin: 20px 0;
+  .catalog {
+    background: $clr_orange;
+    color: $clr_white;
+  }
+  .list-group {
+    a:hover {
+      color: $clr_white;
+      background: $clr_orange;
+    }
+  }
   .products {
     h2 {
       font-size: 17px;

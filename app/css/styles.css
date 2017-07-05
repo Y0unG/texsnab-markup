@@ -164,6 +164,12 @@ header {
  */
 .catalog-wrapper {
   margin: 20px 0; }
+  .catalog-wrapper .catalog {
+    background: #EFA700;
+    color: #ffffff; }
+  .catalog-wrapper .list-group a:hover {
+    color: #ffffff;
+    background: #EFA700; }
   .catalog-wrapper .products h2 {
     font-size: 17px;
     color: #F03770;
