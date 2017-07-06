@@ -275,18 +275,54 @@ float: right;
   }
 }
 
-//способы оплаты
-.payment {
-  background: #FAFAFA;
+//payments
+.payments {
+  text-align: center;
+  list-style: none;
+
+  padding: 0;
+  li {
+    background: url(../images/css_sprites.png) no-repeat;
+    display: inline-block;
+    width: 83px;
+    height: 44px;
+    cursor: pointer;
+  }
+  .visa {
+    background-position: -83px 0;
+    width: 60px;
+  }
+  .mastercard {
+    background-position: -142px 0;
+    width: 60px;
+  }
+  .maestro {
+    background-position: -199px 0;
+    width: 60px;
+
+  }
+  .cirrus {
+    background-position: -258px 0;
+    width: 60px;
+
+  }
+  .paypal {
+    background-position: -313px 0;
+    width: 60px;
+
+  }
+  .western-union {
+    background-position: -376px 0;
+    width: 60px;
+
+  }
+  .visa-electron {
+    background-position: -433px 0;
+    width: 60px;
+
+  }
 }
 
-.payments {
-  margin: 10px auto;
-  height: 52px;
-  line-height: 26px;
-  background-position: center center;
-  width: 850px;
-}
 
 .btn-payments {
   color: #000000;

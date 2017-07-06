@@ -224,15 +224,37 @@ body {
     padding: 11px 20px 11px 20px;
     text-decoration: none; }
 
-.payment {
-  background: #FAFAFA; }
-
 .payments {
-  margin: 10px auto;
-  height: 52px;
-  line-height: 26px;
-  background-position: center center;
-  width: 850px; }
+  text-align: center;
+  list-style: none;
+  padding: 0; }
+  .payments li {
+    background: url(../images/css_sprites.png) no-repeat;
+    display: inline-block;
+    width: 83px;
+    height: 44px;
+    cursor: pointer; }
+  .payments .visa {
+    background-position: -83px 0;
+    width: 60px; }
+  .payments .mastercard {
+    background-position: -142px 0;
+    width: 60px; }
+  .payments .maestro {
+    background-position: -199px 0;
+    width: 60px; }
+  .payments .cirrus {
+    background-position: -258px 0;
+    width: 60px; }
+  .payments .paypal {
+    background-position: -313px 0;
+    width: 60px; }
+  .payments .western-union {
+    background-position: -376px 0;
+    width: 60px; }
+  .payments .visa-electron {
+    background-position: -433px 0;
+    width: 60px; }
 
 .btn-payments {
   color: #000000;
