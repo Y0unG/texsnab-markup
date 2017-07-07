@@ -144,10 +144,11 @@ header {
   .cat-slider-wrapper a {
     position: relative;
     display: inline-block;
-    -webkit-transition: -webkit-transform 1s ease;
-    transition: -webkit-transform 1s ease;
-    transition: transform 1s ease;
-    transition: transform 1s ease, -webkit-transform 1s ease; }
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+    margin-left: 5px; }
     .cat-slider-wrapper a img {
       height: 71px;
       width: 71px; }
@@ -167,6 +168,13 @@ header {
   .catalog-wrapper .catalog {
     background: #EFA700;
     color: #ffffff; }
+  .catalog-wrapper .list-group a {
+    border: 1px solid #ddd;
+    border-bottom: none;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .catalog-wrapper .list-group a:last-child {
+    border-bottom: 1px solid #ddd; }
   .catalog-wrapper .list-group a:hover {
     color: #ffffff;
     background: #EFA700; }
@@ -214,7 +222,7 @@ header {
         display: inline-block; }
       .catalog-wrapper .products .product .form-price .price {
         background: #EFA700;
-        padding: 10px 20px;
+        padding: 9px 20px;
         text-align: center;
         font-weight: bold;
         font-size: 16px;
@@ -231,3 +239,122 @@ header {
 /*
   !Main catalog
  */
+/*
+  Payments
+ */
+.payments {
+  text-align: center;
+  list-style: none;
+  padding: 0; }
+
+.payments li {
+  background: url(../images/css_sprites.png) no-repeat;
+  display: inline-block;
+  width: 83px;
+  height: 44px;
+  cursor: pointer; }
+
+.payments .visa {
+  background-position: -83px 0;
+  width: 60px; }
+
+.payments .mastercard {
+  background-position: -142px 0;
+  width: 60px; }
+
+.payments .maestro {
+  background-position: -199px 0;
+  width: 60px; }
+
+.payments .cirrus {
+  background-position: -258px 0;
+  width: 60px; }
+
+.payments .paypal {
+  background-position: -313px 0;
+  width: 60px; }
+
+.payments .western-union {
+  background-position: -376px 0;
+  width: 60px; }
+
+.payments .visa-electron {
+  background-position: -433px 0;
+  width: 60px; }
+
+.payments .skrill {
+  background-position: -493px 0;
+  width: 60px; }
+
+/*
+  !Payments
+   */
+/*
+  About
+   */
+.logo-down {
+  margin-top: 10px;
+  text-align: center; }
+
+/*
+  !About
+   */
+/*
+  Footer
+ */
+.footer-left {
+  text-align: center; }
+
+.footer-right {
+  margin-left: 200px; }
+
+.footer-links {
+  text-decoration: underline;
+  margin: 0;
+  padding: 0; }
+
+/*
+  !Footer
+ */
+/*
+Also
+ */
+.also {
+  display: inline;
+  text-align: center; }
+
+.btn-watch {
+  background-color: #168602;
+  color: #ffffff;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  padding: 11px 20px 11px 20px;
+  text-decoration: none;
+  margin-top: 190px; }
+  .btn-watch:hover {
+    color: #000000;
+    background-color: #ffffff; }
+
+.tata {
+  background-image: url(../images/car-1.png);
+  height: 245px;
+  width: 318px;
+  margin-left: -30px; }
+
+.i-van {
+  background-image: url(../images/car-2.png);
+  height: 245px;
+  width: 318px;
+  margin-left: -30px; }
+
+.jac {
+  background-image: url(../images/car-3.png);
+  height: 245px;
+  width: 318px;
+  margin-left: -30px; }
+
+.chery {
+  background-image: url(../images/car-4.png);
+  height: 245px;
+  width: 318px;
+  margin-left: -30px; }

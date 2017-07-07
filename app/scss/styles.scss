@@ -186,7 +186,8 @@ header {
   a {
     position: relative;
     display: inline-block;
-    transition: transform 1s ease;
+    transition: transform 0.3s ease;
+    margin-left: 5px;
     img {
       height: 71px;
       width: 71px;
@@ -212,9 +213,18 @@ header {
     color: $clr_white;
   }
   .list-group {
+    a {
+      border: 1px solid #ddd;
+      border-bottom: none;
+      transition: all 0.3s ease;
+    }
+    a:last-child {
+      border-bottom: 1px solid #ddd;
+    }
     a:hover {
       color: $clr_white;
       background: $clr_orange;
+
     }
   }
   .products {
@@ -266,7 +276,7 @@ header {
         }
         .price {
           background: $clr_orange;
-          padding: 10px 20px;
+          padding: 9px 20px;
           text-align: center;
           font-weight: bold;
           font-size: $fs_bigger;
@@ -288,3 +298,124 @@ header {
 /*
   !Main catalog
  */
+
+
+/*
+  Payments
+ */
+.payments {
+text-align: center;
+  list-style: none;
+  padding: 0; }
+  .payments li {
+   background: url(../images/css_sprites.png) no-repeat;
+  display: inline-block;
+    width: 83px;
+    height: 44px;
+    cursor: pointer; }
+  .payments .visa {
+    background-position: -83px 0;
+    width: 60px; }
+  .payments .mastercard {
+   background-position: -142px 0;
+  width: 60px; }
+  .payments .maestro {
+    background-position: -199px 0;
+    width: 60px; }
+  .payments .cirrus {
+    background-position: -258px 0;
+    width: 60px; }
+  .payments .paypal {
+    background-position: -313px 0;
+    width: 60px; }
+  .payments .western-union {
+    background-position: -376px 0;
+    width: 60px; }
+  .payments .visa-electron {
+    background-position: -433px 0;
+ width: 60px; }
+  .payments .skrill {
+    background-position: -493px 0;
+    width: 60px;
+  }
+
+  /*
+  !Payments
+   */
+
+  /*
+  About
+   */
+.logo-down {
+  margin-top: 10px;
+  text-align: center;
+}
+  /*
+  !About
+   */
+
+  /*
+  Footer
+ */
+.footer-left {
+  text-align: center;
+}
+.footer-right {
+  margin-left: 200px;
+}
+
+.footer-links {
+  text-decoration: underline;
+  margin: 0;
+  padding: 0;
+}
+
+  /*
+  !Footer
+ */
+
+/*
+Also
+ */
+.also {
+  display: inline;
+  text-align: center;
+}
+
+.btn-watch {
+  background-color: $clr_green;
+  color: $clr_white;
+  border-radius: 30px;
+  padding: 11px 20px 11px 20px;
+  text-decoration: none;
+  margin-top: 190px;
+  &:hover {
+    color: $clr_black;
+    background-color: $clr_white;
+  }
+}
+.tata {
+  background-image: url(../images/car-1.png);
+  height:245px;
+  width: 318px;
+  margin-left: -30px;
+}
+.i-van {
+  background-image: url(../images/car-2.png);
+  height:245px;
+  width: 318px;
+  margin-left: -30px;
+}
+.jac {
+  background-image: url(../images/car-3.png);
+  height:245px;
+  width: 318px;
+  margin-left: -30px;
+}
+.chery {
+  background-image: url(../images/car-4.png);
+  height:245px;
+  width: 318px;
+  margin-left: -30px;
+
+}
