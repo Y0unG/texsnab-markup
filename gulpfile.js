@@ -64,6 +64,7 @@ gulp.task('img', function(){
 gulp.task('watch', ['browser-sync','css-libs','scripts'], function(){
     gulp.watch('app/scss/**/*.+(scss|sass)', ['sass'], browserSync.reload);
     gulp.watch('app/*.html', browserSync.reload);
+    gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/**/*.js', browserSync.reload);
 });
 
