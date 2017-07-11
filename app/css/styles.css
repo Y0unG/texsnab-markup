@@ -131,6 +131,12 @@ header {
 /*
   Cat slider
  */
+.small-catalog {
+  display: none; }
+
+.small-marks {
+  display: none; }
+
 .cat-slider-wrapper {
   background: #f6f6f6;
   padding: 5px 0; }
@@ -222,7 +228,7 @@ header {
         display: inline-block; }
       .catalog-wrapper .products .product .form-price .price {
         background: #EFA700;
-        padding: 9px 20px;
+        padding: 10px 20px;
         text-align: center;
         font-weight: bold;
         font-size: 16px;
@@ -452,15 +458,85 @@ Form for comment
 .writer {
   text-align: left;
   width: 678px;
-  height: 106px; }
+  height: 106px;
+  margin-bottom: 10px; }
 
 .name_name {
   text-align: left; }
 
 .name {
+  margin: 5px 0;
   width: 260px;
   height: 22px; }
 
 .captcha {
+  margin: 5px 0;
   width: 160px;
   height: 40px; }
+
+.captcha-img {
+  width: 91px;
+  height: 43px;
+  margin-left: 50px; }
+
+/*
+    !Form
+     */
+/*
+!Inside
+ */
+/*
+CATEGORY
+ */
+.introduce {
+  text-align: justify;
+  font-size: medium;
+  font-family: "Times New Roman"; }
+
+.sort {
+  text-align: right; }
+
+.sorted {
+  text-decoration: underline; }
+
+.category-price {
+  color: #ffffff;
+  vertical-align: top;
+  display: inline-block;
+  background: #EFA700;
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  width: 75%; }
+
+@media screen and (orientation: portrait) and (max-width: 420px) {
+  header {
+    display: block; }
+    header .desc {
+      display: none; }
+    header .btn-basket {
+      margin-top: -80px; }
+  .jumbotron {
+    display: none; }
+  .large-marks {
+    display: none; }
+  .small-marks {
+    display: block;
+    text-align: center;
+    margin-left: 30px; }
+  .large-catalog {
+    display: none; }
+  .small-catalog {
+    display: block; } }
+
+@media screen and (orientation: landscape) and (max-width: 800px) {
+  header {
+    display: block; }
+    header .btn-basket {
+      margin-top: -100px; }
+    header address {
+      margin-top: -100px;
+      text-align: center; }
+  .best-pr-wrapper {
+    display: none; } }
