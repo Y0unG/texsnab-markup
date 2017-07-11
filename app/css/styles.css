@@ -291,7 +291,7 @@ header {
    */
 .card {
   padding-bottom: 5px;
-  border: 1px double #646566;
+  border: 1px double  #cccccc;
   margin-bottom: 5px; }
 
 .card-text {
@@ -437,3 +437,30 @@ Inside
   border-top: 2px solid #EFA700;
   border-bottom: 2px solid #EFA700;
   padding: 5px 15px; }
+
+/*
+Form for comment
+ */
+.comment {
+  display: block;
+  position: absolute; }
+  .comment .btn {
+    margin-top: 10px;
+    width: 100px;
+    height: 30px; }
+
+.writer {
+  text-align: left;
+  width: 678px;
+  height: 106px; }
+
+.name_name {
+  text-align: left; }
+
+.name {
+  width: 260px;
+  height: 22px; }
+
+.captcha {
+  width: 160px;
+  height: 40px; }

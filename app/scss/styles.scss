@@ -345,12 +345,13 @@ text-align: center;
 
 .card {
   padding-bottom: 5px;
-  border: 1px double  $clr_dark_gray;
+  border: 1px double  #cccccc;
   margin-bottom: 5px;
 }
 
 .card-text {
   padding: 5px;
+
 }
 
 /*
@@ -513,4 +514,33 @@ Inside
   border-top: 2px solid $clr_orange;
   border-bottom: 2px solid $clr_orange;
   padding : 5px 15px;
+}
+
+/*
+Form for comment
+ */
+.comment {
+  display: block;
+  position: absolute;
+  .btn {
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+  }
+}
+.writer {
+  text-align: left;
+  width: 678px;
+  height: 106px;
+}
+.name_name {
+  text-align: left;
+}
+.name {
+  width: 260px;
+  height: 22px;
+}
+.captcha {
+  width: 160px;
+  height: 40px;
 }
