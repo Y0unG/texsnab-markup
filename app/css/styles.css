@@ -3,7 +3,8 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #fff; }
+  background-color: #fff;
+  min-width: 320px; }
 
 /*
   Colors
@@ -39,8 +40,7 @@ header {
     margin-top: 5px;
     padding: 12px 24px;
     -webkit-border-radius: 4px;
-            border-radius: 4px;
-    min-width: 200px; }
+            border-radius: 4px; }
     header .btn-basket img {
       margin-right: 10px; }
 
@@ -71,6 +71,11 @@ header {
       color: #ffffff;
       top: 0;
       left: -3px; }
+
+.navbar-toggle {
+  border: 1px solid #ffffff; }
+  .navbar-toggle .icon-bar {
+    background: #ffffff; }
 
 /*
   !Header
@@ -131,37 +136,28 @@ header {
 /*
   Cat slider
  */
-.small-catalog {
-  display: none; }
+.cat-slider-wrapper .marks {
+  font-size: 12px;
+  color: #000000;
+  font-weight: 600;
+  width: 100px;
+  display: inline-block;
+  vertical-align: middle; }
 
-.small-marks {
-  display: none; }
-
-.cat-slider-wrapper {
-  background: #f6f6f6;
-  padding: 5px 0; }
-  .cat-slider-wrapper .marks {
-    font-size: 12px;
-    color: #000000;
-    font-weight: 600;
-    width: 100px;
-    display: inline-block;
-    vertical-align: middle; }
-  .cat-slider-wrapper a {
-    position: relative;
-    display: inline-block;
-    -webkit-transition: -webkit-transform 0.3s ease;
-    transition: -webkit-transform 0.3s ease;
-    transition: transform 0.3s ease;
-    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-    margin-left: 5px; }
-    .cat-slider-wrapper a img {
-      height: 71px;
-      width: 71px; }
-    .cat-slider-wrapper a:hover {
-      -webkit-transform: translateY(-5px);
-          -ms-transform: translateY(-5px);
-              transform: translateY(-5px); }
+.cat-slider-wrapper a {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease; }
+  .cat-slider-wrapper a img {
+    height: 71px;
+    width: 71px; }
+  .cat-slider-wrapper a:hover {
+    -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+            transform: translateY(-5px); }
 
 /*
   !Cat slider
@@ -173,7 +169,8 @@ header {
   margin: 20px 0; }
   .catalog-wrapper .catalog {
     background: #EFA700;
-    color: #ffffff; }
+    color: #ffffff;
+    border: none; }
   .catalog-wrapper .list-group a {
     border: 1px solid #ddd;
     border-bottom: none;
@@ -186,7 +183,7 @@ header {
     background: #EFA700; }
   .catalog-wrapper .products h2 {
     font-size: 17px;
-    color: #F03770;
+    color: #318bb5;
     font-weight: normal;
     text-shadow: 0 1px 0 #fff;
     position: relative;
@@ -196,7 +193,7 @@ header {
       position: absolute;
       width: 100%;
       height: 1px;
-      background: #F03770;
+      background: #318bb5;
       bottom: -10px;
       left: 0; }
     .catalog-wrapper .products h2:after {
@@ -204,7 +201,7 @@ header {
       position: absolute;
       width: 11px;
       height: 11px;
-      background: #F03770;
+      background: #318bb5;
       -webkit-border-radius: 100%;
               border-radius: 100%;
       bottom: -15px;
@@ -334,7 +331,7 @@ header {
 Also
  */
 .also {
-  display: inline;
+  display: inline-block;
   text-align: center; }
 
 .down-header {
@@ -510,33 +507,120 @@ CATEGORY
   font-size: 16px;
   width: 75%; }
 
-@media screen and (orientation: portrait) and (max-width: 420px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   header {
     display: block; }
     header .desc {
       display: none; }
+    header .menu {
+      display: block; }
+    header address a {
+      font-size: 10px; }
     header .btn-basket {
-      margin-top: -80px; }
+      font-size: 14px;
+      margin-left: -40px;
+      padding: 6px 5px; }
   .jumbotron {
     display: none; }
   .large-marks {
     display: none; }
   .small-marks {
-    display: block;
-    text-align: center;
-    margin-left: 30px; }
+    background: none;
+    margin-left: -20px;
+    margin-top: 5px;
+    color: #ffffff; }
+    .small-marks button {
+      background: #EFA700;
+      width: 152px;
+      font-size: 14px;
+      padding: 0;
+      text-align: center; }
+    .small-marks span {
+      color: #ffffff; }
+  .small-catalog {
+    background: none;
+    color: #ffffff;
+    margin-left: -5px;
+    margin-top: 5px;
+    display: inline-block;
+    vertical-align: middle; }
+    .small-catalog button {
+      background: #EFA700;
+      height: 42px;
+      width: 142px;
+      font-size: 14px;
+      padding: 0; }
+  .catalog {
+    color: #ffffff;
+    background: none;
+    border: none;
+    padding: 0; }
+  .dropdown-menu {
+    margin-left: 15px; }
   .large-catalog {
     display: none; }
-  .small-catalog {
-    display: block; } }
+  .dropdown-toggle {
+    background: none; }
+  .news-watched {
+    display: none; }
+  .tata {
+    margin: 0; }
+  .jac {
+    margin: 0; }
+  .i-van {
+    margin: 0; }
+  .chery {
+    margin: 0; }
+  .about {
+    font-size: 12px; }
+  .footer-right {
+    margin-left: 0; }
+    .footer-right li {
+      display: inline-block;
+      float: left; }
+      .footer-right li:nth-child(2) {
+        margin-left: 37px; }
+      .footer-right li a {
+        font-size: 10px; } }
 
-@media screen and (orientation: landscape) and (max-width: 800px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   header {
     display: block; }
-    header .btn-basket {
-      margin-top: -100px; }
     header address {
-      margin-top: -100px;
       text-align: center; }
   .best-pr-wrapper {
-    display: none; } }
+    display: none; }
+  .small-catalog {
+    display: none; }
+  .small-marks {
+    display: none; }
+  .tittle-big {
+    margin-left: 60px;
+    margin-top: 10px; }
+  .large-marks a:nth-child(10) {
+    margin-left: 105px; }
+  .attention {
+    display: none; }
+  .also {
+    margin-left: 100px; }
+  .footer-right {
+    margin-left: 0; }
+    .footer-right li {
+      display: inline-block;
+      float: left; }
+      .footer-right li:nth-child(2) {
+        margin-left: 37px; }
+      .footer-right li a {
+        font-size: 10px; } }
+
+@media screen and (min-width: 993px) {
+  .small-catalog {
+    display: none; }
+  .small-marks {
+    display: none; }
+  .also {
+    margin-left: 100px; }
+  .tittle-big {
+    margin-left: 0; }
+  .best-pr-wrapper {
+    margin-top: 10px; } }

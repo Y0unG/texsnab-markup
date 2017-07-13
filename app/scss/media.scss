@@ -1,0 +1,201 @@
+@import "variables";
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  header {
+    display: block;
+    .desc {
+      display: none;
+    }
+    .menu {
+      display: block;
+    }
+
+    address {
+      a {
+        font-size: 10px;
+      }
+    }
+
+    .btn-basket {
+      font-size: 14px;
+      margin-left: -40px;
+      padding: 6px 5px ;
+    }
+  }
+
+  .jumbotron {
+    display: none;
+  }
+
+  .large-marks {
+    display: none;
+  }
+
+  .small-marks {
+    background: none;
+    margin-left: -20px;
+    margin-top: 5px;
+    color: $clr_white;
+    button {
+      background: $clr_orange;
+      width: 152px;
+      font-size: 14px;
+      padding: 0;
+      text-align: center;
+    }
+    span {
+      color: $clr_white;
+    }
+  }
+
+
+  .small-catalog {
+      background: none;
+      color: $clr_white;
+      margin-left: -5px;
+      margin-top: 5px;
+      display: inline-block;
+      vertical-align: middle;
+      button {
+        background: $clr_orange;
+        height: 42px;
+        width: 142px;
+        font-size: 14px;
+        padding: 0;
+      }
+    }
+  .catalog {
+        color: $clr_white;
+        background: none;
+        border: none;
+        padding: 0;
+
+      }
+
+  .dropdown-menu {
+      margin-left: 15px;
+    }
+
+  .large-catalog {
+    display: none;
+  }
+
+  .dropdown-toggle {
+    background: none;
+  }
+
+  .news-watched {
+    display: none;
+  }
+
+  .tata {
+    margin: 0 ;
+  }
+  .jac {
+    margin: 0;;
+  }
+  .i-van {
+    margin: 0;;
+  }
+  .chery {
+    margin: 0;;
+  }
+
+  .about {
+    font-size: 12px;
+  }
+  .footer-right {
+    margin-left: 0;
+
+    li {
+      display: inline-block;
+      float: left;
+      &:nth-child(2) {
+        margin-left: 37px;
+    }
+      a {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  header {
+    display: block;
+    .btn-basket {
+    }
+    address {
+      text-align: center;
+    }
+  }
+
+  .best-pr-wrapper {
+    display: none;
+  }
+
+  .small-catalog {
+    display: none;
+  }
+
+  .small-marks {
+    display: none;
+  }
+
+  .tittle-big {
+    margin-left: 60px;
+    margin-top: 10px;
+  }
+
+  .large-marks {
+    a:nth-child(10) {
+      margin-left: 105px;
+    }
+  }
+
+  .attention {
+    display: none;
+  }
+
+  .also {
+    margin-left: 100px;
+  }
+
+  .footer-right {
+    margin-left: 0;
+
+    li {
+      display: inline-block;
+      float: left;
+      &:nth-child(2) {
+        margin-left: 37px;
+      }
+      a {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .small-catalog {
+    display: none;
+  }
+
+  .small-marks {
+    display: none;
+  }
+
+  .also {
+    margin-left: 100px;
+  }
+
+  .tittle-big {
+    margin-left: 0;
+  }
+
+  .best-pr-wrapper {
+    margin-top: 10px;
+  }
+
+}
