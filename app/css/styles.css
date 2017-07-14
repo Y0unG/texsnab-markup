@@ -5,6 +5,8 @@ body {
   color: #333;
   background-color: #fff;
   min-width: 320px; }
+  body .dropdown-menu {
+    min-width: 0 !important; }
 
 /*
   Colors
@@ -106,9 +108,11 @@ header {
       color: #EFA700;
       border-color: #EFA700; }
   .jumbotron .tittle-big {
+    margin-top: 10px;
     width: 568px;
     height: 185px; }
   .jumbotron .best-pr-wrapper {
+    margin-top: 10px;
     position: relative; }
     .jumbotron .best-pr-wrapper .best-pr {
       position: absolute;
@@ -316,10 +320,8 @@ header {
 .footer-left {
   text-align: center; }
 
-.footer-right {
-  margin-left: 200px; }
-
 .footer-links {
+  float: right;
   text-decoration: underline;
   margin: 0;
   padding: 0; }
@@ -331,6 +333,7 @@ header {
 Also
  */
 .also {
+  margin-left: 100px;
   display: inline-block;
   text-align: center; }
 
@@ -417,7 +420,7 @@ Inside
   color: #646566;
   border: 1px solid #F1F1F1;
   padding: 10px 15px 10px 10px;
-  width: 480px; }
+  width: auto; }
 
 .description {
   color: #cccccc;
@@ -454,7 +457,7 @@ Form for comment
 
 .writer {
   text-align: left;
-  width: 678px;
+  width: auto;
   height: 106px;
   margin-bottom: 10px; }
 
@@ -555,22 +558,22 @@ CATEGORY
     background: none;
     border: none;
     padding: 0; }
-  .dropdown-menu {
-    margin-left: 15px; }
   .large-catalog {
     display: none; }
   .dropdown-toggle {
     background: none; }
   .news-watched {
     display: none; }
-  .tata {
-    margin: 0; }
-  .jac {
-    margin: 0; }
-  .i-van {
-    margin: 0; }
-  .chery {
-    margin: 0; }
+  .alsoo .also {
+    margin-left: 0; }
+    .alsoo .also .tata {
+      margin: 0; }
+    .alsoo .also .jac {
+      margin: 0; }
+    .alsoo .also .i-van {
+      margin: 0; }
+    .alsoo .also .chery {
+      margin: 0; }
   .about {
     font-size: 12px; }
   .footer-right {
@@ -581,13 +584,33 @@ CATEGORY
       .footer-right li:nth-child(2) {
         margin-left: 37px; }
       .footer-right li a {
-        font-size: 10px; } }
+        font-size: 10px; }
+  /*
+  INSIDE
+   */
+  .catalog-wrapper .container .row .products .breadcrumb {
+    background: none;
+    padding: 8px 5px;
+    margin-top: -20px;
+    margin-left: -30px; }
+  .catalog-wrapper .container .row .products .row .inside-product .annotation {
+    width: auto; }
+  .catalog-wrapper .container .row .products form .comment .writer {
+    width: auto; }
+  .payment {
+    margin-top: 1400px; }
+  /*
+  Category
+   */
+  .catalog-wrapper .products .introduce {
+    display: none; } }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  header {
-    display: block; }
-    header address {
-      text-align: center; }
+  header .desc {
+    margin-top: 50px;
+    margin-left: -130px; }
+  header address {
+    text-align: center; }
   .best-pr-wrapper {
     display: none; }
   .small-catalog {
@@ -595,32 +618,52 @@ CATEGORY
   .small-marks {
     display: none; }
   .tittle-big {
-    margin-left: 60px;
-    margin-top: 10px; }
+    margin-left: 60px; }
   .large-marks a:nth-child(10) {
     margin-left: 105px; }
   .attention {
     display: none; }
   .also {
     margin-left: 100px; }
-  .footer-right {
-    margin-left: 0; }
-    .footer-right li {
-      display: inline-block;
-      float: left; }
-      .footer-right li:nth-child(2) {
-        margin-left: 37px; }
-      .footer-right li a {
-        font-size: 10px; } }
+  .container .footer {
+    margin-left: 40px; }
+    .container .footer .footer-right {
+      margin-left: 0; }
+      .container .footer .footer-right li {
+        display: inline-block;
+        float: left; }
+        .container .footer .footer-right li:nth-child(2) {
+          margin-left: 37px; }
+        .container .footer .footer-right li a {
+          font-size: 10px; } }
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 993px) and (max-width: 1199px) {
   .small-catalog {
     display: none; }
   .small-marks {
     display: none; }
-  .also {
-    margin-left: 100px; }
+  header .desc {
+    margin-top: 50px;
+    margin-left: -170px; }
+  .cat-slider-wrapper .large-marks a:nth-child(13) {
+    margin-left: 105px; }
+  .alsoo .also {
+    margin-left: 200px; }
+    .alsoo .also .tata {
+      margin: 0; }
+    .alsoo .also .jac {
+      margin: 0; }
+    .alsoo .also .i-van {
+      margin-left: -30px; }
+    .alsoo .also .chery {
+      margin-left: -35px; }
   .tittle-big {
     margin-left: 0; }
   .best-pr-wrapper {
     margin-top: 10px; } }
+
+@media screen and (min-width: 1200px) {
+  .small-catalog {
+    display: none; }
+  .small-marks {
+    display: none; } }
