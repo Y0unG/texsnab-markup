@@ -1,0 +1,300 @@
+@import "variables";
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  header {
+    display: block;
+    .desc {
+      display: none;
+    }
+    .menu {
+      display: block;
+    }
+
+    address {
+      a {
+        font-size: 10px;
+      }
+    }
+
+    .btn-basket {
+      font-size: 14px;
+      margin-left: -40px;
+      padding: 6px 5px ;
+    }
+  }
+
+  .jumbotron {
+    display: none;
+  }
+
+  .large-marks {
+    display: none;
+  }
+
+  .small-marks {
+    background: none;
+    margin-left: -20px;
+    margin-top: 5px;
+    color: $clr_white;
+    button {
+      background: $clr_orange;
+      width: 152px;
+      font-size: 14px;
+      padding: 0;
+      text-align: center;
+    }
+    span {
+      color: $clr_white;
+    }
+  }
+
+
+  .small-catalog {
+      background: none;
+      color: $clr_white;
+      margin-left: -5px;
+      margin-top: 5px;
+      display: inline-block;
+      vertical-align: middle;
+      button {
+        background: $clr_orange;
+        height: 42px;
+        width: 142px;
+        font-size: 14px;
+        padding: 0;
+      }
+    }
+  .catalog {
+        color: $clr_white;
+        background: none;
+        border: none;
+        padding: 0;
+
+      }
+
+
+  .large-catalog {
+    display: none;
+  }
+
+  .dropdown-toggle {
+    background: none;
+  }
+
+  .news-watched {
+    display: none;
+  }
+
+.alsoo {
+  .also {
+    margin-left: 0;
+    .tata {
+    margin: 0 ;
+  }
+    .jac {
+      margin: 0;;
+    }
+    .i-van {
+      margin: 0;;
+    }
+    .chery {
+      margin: 0;;
+    }
+  }
+}
+
+
+  .about {
+    font-size: 12px;
+  }
+  .footer-right {
+    margin-left: 0;
+
+    li {
+      display: inline-block;
+      float: left;
+      &:nth-child(2) {
+        margin-left: 37px;
+    }
+      a {
+        font-size: 10px;
+      }
+    }
+  }
+
+  /*
+  INSIDE
+   */
+  .catalog-wrapper {
+    .container {
+      .row {
+        .products {
+          .breadcrumb {
+            background: none;
+            padding:8px 5px;
+            margin-top: -20px;
+            margin-left: -30px;
+          }
+          .row {
+            .inside-product {
+              .annotation {
+                width: auto;
+              }
+            }
+          }
+          form {
+            .comment {
+              .writer {
+                width: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .payment {
+    margin-top: 1400px;
+  }
+
+  /*
+  Category
+   */
+  .catalog-wrapper {
+    .products {
+      .introduce {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  header {
+    .desc {
+      margin-top: 50px;
+      margin-left: -130px;
+    }
+
+    .btn-basket {
+    }
+    address {
+      text-align: center;
+    }
+  }
+
+  .best-pr-wrapper {
+    display: none;
+  }
+
+  .small-catalog {
+    display: none;
+  }
+
+  .small-marks {
+    display: none;
+  }
+
+  .tittle-big {
+    margin-left: 60px;
+  }
+
+  .large-marks {
+    a:nth-child(10) {
+      margin-left: 105px;
+    }
+  }
+
+  .attention {
+    display: none;
+  }
+
+  .also {
+    margin-left: 100px;
+  }
+
+  .container {
+    .footer {
+      margin-left: 40px;
+      .footer-right {
+        margin-left: 0;
+
+        li {
+          display: inline-block;
+          float: left;
+          &:nth-child(2) {
+            margin-left: 37px;
+          }
+          a {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+  .small-catalog {
+    display: none;
+  }
+
+  .small-marks {
+    display: none;
+  }
+
+  header {
+    .desc {
+      margin-top: 50px;
+      margin-left: -170px;
+    }
+  }
+
+  .cat-slider-wrapper {
+    .large-marks {
+      a {
+        &:nth-child(13) {
+          margin-left: 105px;
+        }
+      }
+    }
+  }
+
+  .alsoo {
+    .also {
+      margin-left: 200px;
+      .tata {
+        margin: 0;
+      }
+      .jac {
+        margin: 0;
+      }
+      .i-van {
+        margin-left: -30px;
+      }
+      .chery {
+        margin-left: -35px;
+      }
+    }
+  }
+
+  .tittle-big {
+    margin-left: 0;
+  }
+
+  .best-pr-wrapper {
+    margin-top: 10px;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .small-catalog {
+    display: none;
+  }
+
+  .small-marks {
+    display: none;
+  }
+}

@@ -6,6 +6,10 @@ body {
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
+  min-width: 320px;
+  .dropdown-menu {
+    min-width: 0 !important;
+  }
 }
 
 /*
@@ -54,7 +58,6 @@ header {
     margin-top: 5px;
     padding: 12px 24px;
     border-radius: 4px;
-    min-width: 200px;
     img {
       margin-right: 10px;
     }
@@ -62,6 +65,7 @@ header {
 }
 
 .menu{
+
   background-color: $clr_blue;
   ul{
     li > a {
@@ -95,6 +99,13 @@ header {
       top: 0;
       left: -3px;
     }
+  }
+}
+
+.navbar-toggle {
+  border: 1px solid $clr_white;
+  .icon-bar {
+    background: $clr_white;
   }
 }
 
@@ -132,10 +143,12 @@ header {
   }
 
   .tittle-big {
+    margin-top: 10px;
     width: 568px;
     height: 185px;
   }
   .best-pr-wrapper {
+    margin-top: 10px;
     position: relative;
 
     .best-pr {
@@ -171,9 +184,9 @@ header {
   Cat slider
  */
 
+
+
 .cat-slider-wrapper {
-  background: $clr_light_gray;
-  padding: 5px 0;
   .marks {
     font-size: $fs_small;
     color: $clr_black;
@@ -181,13 +194,13 @@ header {
     width: 100px;
     display: inline-block;
     vertical-align: middle;
+
   }
 
   a {
     position: relative;
     display: inline-block;
     transition: transform 0.3s ease;
-    margin-left: 5px;
     img {
       height: 71px;
       width: 71px;
@@ -211,6 +224,7 @@ header {
   .catalog {
     background: $clr_orange;
     color: $clr_white;
+    border: none;
   }
   .list-group {
     a {
@@ -230,7 +244,7 @@ header {
   .products {
     h2 {
       font-size: 17px;
-      color: $clr_pink;
+      color: $clr_blue;
       font-weight: normal;
       text-shadow: 0 1px 0 #fff;
       position: relative;
@@ -240,7 +254,7 @@ header {
         position: absolute;
         width: 100%;
         height: 1px;
-        background: $clr_pink;
+        background: $clr_blue;
         bottom: -10px;
         left: 0;
       }
@@ -249,7 +263,7 @@ header {
         position: absolute;
         width: 11px;
         height: 11px;
-        background: $clr_pink;
+        background: $clr_blue;
         border-radius: 100%;
         bottom: -15px;
         left: 100%;
@@ -276,7 +290,7 @@ header {
         }
         .price {
           background: $clr_orange;
-          padding: 9px 20px;
+          padding: 10px 20px;
           text-align: center;
           font-weight: bold;
           font-size: $fs_bigger;
@@ -345,12 +359,13 @@ text-align: center;
 
 .card {
   padding-bottom: 5px;
-  border: 1px double  $clr_dark_gray;
+  border: 1px double  #cccccc;
   margin-bottom: 5px;
 }
 
 .card-text {
   padding: 5px;
+
 }
 
 /*
@@ -370,11 +385,9 @@ text-align: center;
 .footer-left {
   text-align: center;
 }
-.footer-right {
-  margin-left: 200px;
-}
 
 .footer-links {
+  float: right;
   text-decoration: underline;
   margin: 0;
   padding: 0;
@@ -388,7 +401,8 @@ text-align: center;
 Also
  */
 .also {
-  display: inline;
+  margin-left: 100px;
+  display: inline-block;
   text-align: center;
 }
 
@@ -442,10 +456,6 @@ Also
 Inside
  */
 
-.inside-product {
-
-}
-
 .inside-price {
   font-size: 36px;
   white-space: nowrap;
@@ -486,7 +496,7 @@ Inside
   color: $clr_dark_gray;
   border: 1px solid #F1F1F1;;
   padding: 10px 15px 10px 10px;
-  width: 480px;
+  width: auto;
 }
 
 .description {
@@ -514,3 +524,77 @@ Inside
   border-bottom: 2px solid $clr_orange;
   padding : 5px 15px;
 }
+
+/*
+Form for comment
+ */
+.comment {
+  display: block;
+  position: absolute;
+  .btn {
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+  }
+}
+.writer {
+  text-align: left;
+  width: auto;
+  height: 106px;
+  margin-bottom: 10px;
+}
+.name_name {
+  text-align: left;
+}
+.name {
+  margin: 5px 0;
+  width: 260px;
+  height: 22px;
+}
+.captcha {
+  margin: 5px 0;
+  width: 160px;
+  height: 40px;
+}
+.captcha-img {
+  width: 91px;
+  height: 43px;
+  margin-left: 50px;
+}
+    /*
+    !Form
+     */
+/*
+!Inside
+ */
+
+/*
+CATEGORY
+ */
+.introduce {
+  text-align: justify;
+  font-size:medium;
+  font-family: "Times New Roman";
+}
+
+.sort {
+  text-align: right;
+}
+.sorted {
+  text-decoration: underline;
+}
+
+.category-price {
+  color: $clr_white;
+  vertical-align: top;
+  display: inline-block;
+  background: $clr_orange;
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: $fs_bigger;
+  width: 75%;
+}
+
+
+@import "media";
