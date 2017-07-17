@@ -447,13 +447,10 @@ Inside
 /*
 Form for comment
  */
-.comment {
-  display: block;
-  position: absolute; }
-  .comment .btn {
-    margin-top: 10px;
-    width: 100px;
-    height: 30px; }
+.comment .btn {
+  margin-top: 10px;
+  width: 100px;
+  height: 30px; }
 
 .writer {
   text-align: left;
@@ -511,18 +508,16 @@ CATEGORY
   width: 75%; }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  header {
+  header .desc {
+    display: none; }
+  header .menu {
     display: block; }
-    header .desc {
-      display: none; }
-    header .menu {
-      display: block; }
-    header address a {
-      font-size: 10px; }
-    header .btn-basket {
-      font-size: 14px;
-      margin-left: -40px;
-      padding: 6px 5px; }
+  header address a {
+    font-size: 10px; }
+  header .btn-basket {
+    font-size: 14px;
+    margin-left: -40px;
+    padding: 6px 5px; }
   .jumbotron {
     display: none; }
   .large-marks {
@@ -553,11 +548,11 @@ CATEGORY
       width: 142px;
       font-size: 14px;
       padding: 0; }
-  .catalog {
-    color: #ffffff;
-    background: none;
-    border: none;
-    padding: 0; }
+    .small-catalog .catalog {
+      color: #ffffff;
+      background: none;
+      border: none;
+      padding: 0; }
   .large-catalog {
     display: none; }
   .dropdown-toggle {
@@ -597,8 +592,6 @@ CATEGORY
     width: auto; }
   .catalog-wrapper .container .row .products form .comment .writer {
     width: auto; }
-  .payment {
-    margin-top: 1400px; }
   /*
   Category
    */
