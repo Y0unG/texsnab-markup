@@ -15,25 +15,29 @@
 <header>
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-2 col-lg-3">
-                <a href="/"><img src="images/logo_header.png" /></a>
-            </div>
-            <div class="col-xs-12 col-sm-3 col-lg-3">
-                <p class="dark-gray desc"><span class="blue">“Киевоблагротехпостач”</span><br/>
-                    частное акционерное общество<br/>
-                    <span class="blue">магазин автозапчастей</span>
-                </p>
-            </div>
-            <div class="col-xs-7 col-sm-3 col-lg-3">
-                <address>
-                    <a href="tel:+380444526330"><span class="blue">(044)</span> 452-63-30</a><br/>
-                    <a href="tel:+380444526330"><span class="blue">(044)</span> 452-63-31</a><br/>
-                    <a href="mailto:zakaz@texsnab.kiev.ua"><span class="blue">zakaz@texsnab.kiev.ua</span></a><br/>
-                </address>
-            </div>
-            <div class="col-xs-5 col-sm-4 col-lg-3">
-                <button class="btn btn-basket" disabled>
-                    <img src="images/korzina_icon.png">Корзина пуста</button>
+            <div itemscope itemtype="http://schema.org/Organization">
+                <div class="col-xs-12 col-sm-2 col-lg-3">
+                    <a href="/"><img src="images/logo_header.png"/></a>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-lg-3">
+                    <p class="dark-gray desc"><span class="blue" itemprop="name">“Киевоблагротехпостач”</span><br/>
+                        частное акционерное общество<br/>
+                        <span class="blue">магазин автозапчастей</span>
+                    </p>
+                </div>
+                <div class="col-xs-7 col-sm-3 col-lg-3">
+
+                    <address>
+                        <a href="tel:+380444526330"><span class="blue" itemprop="telephone">(044)</span> 452-63-30</a><br/>
+                        <a href="tel:+380444526330"><span class="blue" itemprop="telephone">(044)</span> 452-63-31</a><br/>
+                        <a href="mailto:zakaz@texsnab.kiev.ua"><span class="blue" itemprop="email">zakaz@texsnab.kiev.ua</span></a><br/>
+                    </address>
+                </div>
+                <div class="col-xs-5 col-sm-4 col-lg-3">
+                    <button class="btn btn-basket" disabled>
+                        <img src="images/korzina_icon.png">Корзина пуста
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -252,11 +256,13 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-9 products">
+            <div class="col-xs-12 col-sm-9 products" itemscope itemtype="http://schema.org/ItemList">
+                <div itemscope itemtype="BreadcrumbList">
                     <ol class="breadcrumb">
-                        <li><a href="#">Главная</a></li>
-                        <li><a href="#">Аксессуары</a></li>
+                        <li><a href="#" itemprop="breadcrumb">Главная</a></li>
+                        <li class="active"><a href="#" itemprop="breadcrumb">Аксессуары</a></li>
                     </ol>
+                </div>
                     <h1>Аксессуары</h1>
                     <p class="introduce">В розділі Аксесуари  Ви зможете знайти товари, які допомагають зробити користування автомобілем
                         більш зручним (в салон авто плечики <a href="">для одягу</a> або <a href="">вішалку</a>,  розгалужувач прикурювача ),
@@ -276,92 +282,110 @@
                     <p class="sort">Сортировать по <a href="" class="sorted">цене</a> <a href="" class="sorted">названию</a></p>
                     <div class="row">
                         <div class="col-xs-12 col-sm-6 col-lg-4">
-                            <div class="product">
+                            <div class="product" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
                                 <span class="articul">Артикул. 110102021</span>
                                 <a href="/">
-                                    <img src="images/110102021.200x200.jpg" class="prd_img">
-                                    <span>а-шина газель кама-232 б-к 185/75R16С</span>
+                                    <img src="images/110102021.200x200.jpg" class="prd_img" itemprop="image">
+                                    <span itemprop="name">а-шина газель кама-232 б-к 185/75R16С</span>
                                 </a>
                                 <form action="" class="form-price">
-                                    <div class="category-price">1284.00 грн</div>
-                                    <button type="submit" class="btn btn-buy">
-                                        <span class="glyphicon glyphicon-shopping-cart"  aria-hidden="true"></span>
-                                    </button>
+                                    <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                        <div class="price" itemprop="price">1284.00 грн</div>
+
+                                        <button type="submit" class="btn btn-buy">
+                                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-lg-4">
-                            <div class="product">
+                            <div class="product" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
                                 <span class="articul">Артикул. 110102021</span>
                                 <a href="/">
-                                    <img src="images/110102021.200x200.jpg" class="prd_img">
-                                    <span>а-шина газель кама-232 б-к 185/75R16С</span>
+                                    <img src="images/110102021.200x200.jpg" class="prd_img" itemprop="image">
+                                    <span itemprop="name">а-шина газель кама-232 б-к 185/75R16С</span>
                                 </a>
                                 <form action="" class="form-price">
-                                    <div class="category-price">1284.00 грн</div>
-                                    <button type="submit" class="btn btn-buy">
-                                        <span class="glyphicon glyphicon-shopping-cart"  aria-hidden="true"></span>
-                                    </button>
+                                    <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                        <div class="price" itemprop="price">1284.00 грн</div>
+
+                                        <button type="submit" class="btn btn-buy">
+                                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-lg-4">
-                            <div class="product">
+                            <div class="product" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
                                 <span class="articul">Артикул. 110102021</span>
                                 <a href="/">
-                                    <img src="images/110102021.200x200.jpg" class="prd_img">
-                                    <span>а-шина газель кама-232 б-к 185/75R16С</span>
+                                    <img src="images/110102021.200x200.jpg" class="prd_img" itemprop="image">
+                                    <span itemprop="name">а-шина газель кама-232 б-к 185/75R16С</span>
                                 </a>
                                 <form action="" class="form-price">
-                                    <div class="category-price">1284.00 грн</div>
-                                    <button type="submit" class="btn btn-buy">
-                                        <span class="glyphicon glyphicon-shopping-cart"  aria-hidden="true"></span>
-                                    </button>
+                                    <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                        <div class="price" itemprop="price">1284.00 грн</div>
+
+                                        <button type="submit" class="btn btn-buy">
+                                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-lg-4">
-                            <div class="product">
+                            <div class="product" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
                                 <span class="articul">Артикул. 110102021</span>
                                 <a href="/">
-                                    <img src="images/110102021.200x200.jpg" class="prd_img">
-                                    <span>а-шина газель кама-232 б-к 185/75R16С</span>
+                                    <img src="images/110102021.200x200.jpg" class="prd_img" itemprop="image">
+                                    <span itemprop="name">а-шина газель кама-232 б-к 185/75R16С</span>
                                 </a>
                                 <form action="" class="form-price">
-                                    <div class="category-price">1284.00 грн</div>
-                                    <button type="submit" class="btn btn-buy">
-                                        <span class="glyphicon glyphicon-shopping-cart"  aria-hidden="true"></span>
-                                    </button>
+                                    <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                        <div class="price" itemprop="price">1284.00 грн</div>
+
+                                        <button type="submit" class="btn btn-buy">
+                                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-lg-4">
-                            <div class="product">
+                            <div class="product" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
                                 <span class="articul">Артикул. 110102021</span>
                                 <a href="/">
-                                    <img src="images/110102021.200x200.jpg" class="prd_img">
-                                    <span>а-шина газель кама-232 б-к 185/75R16С</span>
+                                    <img src="images/110102021.200x200.jpg" class="prd_img" itemprop="image">
+                                    <span itemprop="name">а-шина газель кама-232 б-к 185/75R16С</span>
                                 </a>
                                 <form action="" class="form-price">
-                                    <div class="category-price">1284.00 грн</div>
-                                    <button type="submit" class="btn btn-buy">
-                                        <span class="glyphicon glyphicon-shopping-cart"  aria-hidden="true"></span>
-                                    </button>
+                                    <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                        <div class="price" itemprop="price">1284.00 грн</div>
+
+                                        <button type="submit" class="btn btn-buy">
+                                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-lg-4">
-                            <div class="product">
+                            <div class="product" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
                                 <span class="articul">Артикул. 110102021</span>
                                 <a href="/">
-                                    <img src="images/110102021.200x200.jpg" class="prd_img">
-                                    <span>а-шина газель кама-232 б-к 185/75R16С</span>
+                                    <img src="images/110102021.200x200.jpg" class="prd_img" itemprop="image">
+                                    <span itemprop="name">а-шина газель кама-232 б-к 185/75R16С</span>
                                 </a>
                                 <form action="" class="form-price">
-                                    <div class="category-price">1284.00 грн</div>
-                                    <button type="submit" class="btn btn-buy">
-                                        <span class="glyphicon glyphicon-shopping-cart"  aria-hidden="true"></span>
-                                    </button>
+                                    <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                        <div class="price" itemprop="price">1284.00 грн</div>
+
+                                        <button type="submit" class="btn btn-buy">
+                                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
