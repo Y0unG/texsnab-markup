@@ -2,7 +2,6 @@
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   header {
-    display: block;
     .desc {
       display: none;
     }
@@ -63,14 +62,14 @@
         font-size: 14px;
         padding: 0;
       }
-    }
-  .catalog {
-        color: $clr_white;
-        background: none;
-        border: none;
-        padding: 0;
+    .catalog {
+          color: $clr_white;
+          background: none;
+          border: none;
+          padding: 0;
+        }
 
-      }
+  }
 
 
   .large-catalog {
@@ -153,9 +152,9 @@
       }
     }
   }
-  .payment {
-    margin-top: 1400px;
-  }
+  //.payment {
+  //  margin-top: 1400px;
+  //}
 
   /*
   Category
